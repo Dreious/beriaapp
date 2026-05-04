@@ -1,4 +1,5 @@
 import Constants from 'expo-constants';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
 import { StatusBar } from 'expo-status-bar';
 import { Accelerometer } from 'expo-sensors';
@@ -38,8 +39,9 @@ const NO_FACE_TIMEOUT_MS = 500;
 const MOTION_UPDATE_INTERVAL_MS = 80;
 const MOTION_DELTA_THRESHOLD = 0.75;
 const MOTION_MAGNITUDE_THRESHOLD = 1.85;
+const FACE_SCAN_STORAGE_KEY = 'settings.faceScanEnabled';
 const LEAGUE_PLAYERS = [
-  { name: 'Berivan', xp: 1280, rank: 1, highlight: true },
+  { name: 'SofiaSol', xp: 1280, rank: 1, highlight: true },
   { name: 'LunaMora', xp: 1195, rank: 2 },
   { name: 'Canito_34', xp: 1120, rank: 3 },
   { name: 'ElifVista', xp: 980, rank: 4 },
@@ -158,6 +160,30 @@ export default function App() {
   const firstThreeUnlocked = questions
     .slice(0, 3)
     .every((question) => answers[question.id] === question.correct);
+
+  useEffect(() => {
+    let active = true;
+
+    AsyncStorage.getItem(FACE_SCAN_STORAGE_KEY)
+      .then((storedValue) => {
+        if (active && storedValue !== null) {
+          setFaceScanEnabled(storedValue === 'true');
+        }
+      })
+      .catch(() => null);
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  function toggleFaceScanEnabled() {
+    setFaceScanEnabled((current) => {
+      const nextValue = !current;
+      AsyncStorage.setItem(FACE_SCAN_STORAGE_KEY, String(nextValue)).catch(() => null);
+      return nextValue;
+    });
+  }
 
   useEffect(() => {
     if (!session) {
@@ -312,7 +338,7 @@ export default function App() {
       {screen === 'settings' ? (
         <SettingsScreen
           faceScanEnabled={faceScanEnabled}
-          onToggleFaceScan={() => setFaceScanEnabled((current) => !current)}
+          onToggleFaceScan={toggleFaceScanEnabled}
         />
       ) : null}
 
@@ -468,7 +494,7 @@ function LoginScreen({ apiBaseUrl, onLogin }) {
               autoCapitalize="none"
               value={username}
               onChangeText={setUsername}
-              placeholder="Admin kullanici adi"
+              placeholder="admin"
               placeholderTextColor="#8b93a7"
               style={styles.input}
             />
@@ -476,7 +502,7 @@ function LoginScreen({ apiBaseUrl, onLogin }) {
               secureTextEntry
               value={password}
               onChangeText={setPassword}
-              placeholder="Admin sifresi"
+              placeholder="Admin123"
               placeholderTextColor="#8b93a7"
               style={styles.input}
             />
@@ -1284,11 +1310,12 @@ function GamifiedTestScreen({
         </View>
       )}
 
-      <PrimaryButton
-        disabled={!isChatUnlocked}
-        label={isChatUnlocked ? 'Yazisma Bolumune Git' : 'Yazisma Kilitli'}
-        onPress={onOpenChat}
-      />
+      {isChatUnlocked ? (
+        <PrimaryButton
+          label="Yazisma Bolumune Git"
+          onPress={onOpenChat}
+        />
+      ) : null}
     </ScrollView>
   );
 }
