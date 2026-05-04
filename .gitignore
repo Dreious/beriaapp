@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.env
+
+mobile/.git-local-backup/

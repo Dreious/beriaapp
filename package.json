@@ -1,0 +1,18 @@
+{
+  "name": "expo-node-study-chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "start:server": "node server/index.js",
+    "start:mobile": "npm --prefix mobile start"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  }
+}

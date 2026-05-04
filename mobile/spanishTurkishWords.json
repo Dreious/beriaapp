@@ -1,0 +1,6002 @@
+[
+  {
+    "rank": 1,
+    "spanish": "de",
+    "normalized": "de",
+    "turkish": "-in, -den, ait"
+  },
+  {
+    "rank": 2,
+    "spanish": "es",
+    "normalized": "es",
+    "turkish": "o, olmak fiili"
+  },
+  {
+    "rank": 3,
+    "spanish": "son",
+    "normalized": "son",
+    "turkish": "onlar, -dirler"
+  },
+  {
+    "rank": 4,
+    "spanish": "el",
+    "normalized": "el",
+    "turkish": "eril artikel"
+  },
+  {
+    "rank": 5,
+    "spanish": "la",
+    "normalized": "la",
+    "turkish": "disil artikel"
+  },
+  {
+    "rank": 6,
+    "spanish": "los",
+    "normalized": "los",
+    "turkish": "eril cogul artikel"
+  },
+  {
+    "rank": 7,
+    "spanish": "las",
+    "normalized": "las",
+    "turkish": "disil cogul artikel"
+  },
+  {
+    "rank": 8,
+    "spanish": "que",
+    "normalized": "que",
+    "turkish": "ki, ne"
+  },
+  {
+    "rank": 9,
+    "spanish": "y",
+    "normalized": "y",
+    "turkish": "ve"
+  },
+  {
+    "rank": 10,
+    "spanish": "a",
+    "normalized": "a",
+    "turkish": "-e, -a"
+  },
+  {
+    "rank": 11,
+    "spanish": "al",
+    "normalized": "al",
+    "turkish": "-e, -a"
+  },
+  {
+    "rank": 12,
+    "spanish": "del",
+    "normalized": "del",
+    "turkish": "-in, -den"
+  },
+  {
+    "rank": 13,
+    "spanish": "un",
+    "normalized": "un",
+    "turkish": "bir"
+  },
+  {
+    "rank": 14,
+    "spanish": "una",
+    "normalized": "una",
+    "turkish": "bir"
+  },
+  {
+    "rank": 15,
+    "spanish": "por",
+    "normalized": "por",
+    "turkish": "icin, tarafindan"
+  },
+  {
+    "rank": 16,
+    "spanish": "con",
+    "normalized": "con",
+    "turkish": "ile"
+  },
+  {
+    "rank": 17,
+    "spanish": "no",
+    "normalized": "no",
+    "turkish": "hayir, degil"
+  },
+  {
+    "rank": 18,
+    "spanish": "para",
+    "normalized": "para",
+    "turkish": "icin"
+  },
+  {
+    "rank": 19,
+    "spanish": "más",
+    "normalized": "mas",
+    "turkish": "daha fazla"
+  },
+  {
+    "rank": 20,
+    "spanish": "o",
+    "normalized": "o",
+    "turkish": "veya"
+  },
+  {
+    "rank": 21,
+    "spanish": "pero",
+    "normalized": "pero",
+    "turkish": "ama"
+  },
+  {
+    "rank": 22,
+    "spanish": "en",
+    "normalized": "en",
+    "turkish": "icinde, -de"
+  },
+  {
+    "rank": 23,
+    "spanish": "sin",
+    "normalized": "sin",
+    "turkish": "olmadan"
+  },
+  {
+    "rank": 24,
+    "spanish": "sobre",
+    "normalized": "sobre",
+    "turkish": "uzerinde, hakkinda"
+  },
+  {
+    "rank": 25,
+    "spanish": "entre",
+    "normalized": "entre",
+    "turkish": "arasinda"
+  },
+  {
+    "rank": 26,
+    "spanish": "todo",
+    "normalized": "todo",
+    "turkish": "her sey, butun"
+  },
+  {
+    "rank": 27,
+    "spanish": "ser",
+    "normalized": "ser",
+    "turkish": "olmak"
+  },
+  {
+    "rank": 28,
+    "spanish": "también",
+    "normalized": "tambien",
+    "turkish": "ayrica, de"
+  },
+  {
+    "rank": 29,
+    "spanish": "muy",
+    "normalized": "muy",
+    "turkish": "cok"
+  },
+  {
+    "rank": 30,
+    "spanish": "año",
+    "normalized": "ano",
+    "turkish": "yil"
+  },
+  {
+    "rank": 31,
+    "spanish": "qué",
+    "normalized": "que",
+    "turkish": "ki, ne"
+  },
+  {
+    "rank": 32,
+    "spanish": "sólo",
+    "normalized": "solo",
+    "turkish": "sadece"
+  },
+  {
+    "rank": 33,
+    "spanish": "yo",
+    "normalized": "yo",
+    "turkish": "ben"
+  },
+  {
+    "rank": 34,
+    "spanish": "hay",
+    "normalized": "hay",
+    "turkish": "var"
+  },
+  {
+    "rank": 35,
+    "spanish": "ni",
+    "normalized": "ni",
+    "turkish": "ne de"
+  },
+  {
+    "rank": 36,
+    "spanish": "parte",
+    "normalized": "parte",
+    "turkish": "parca, bolum"
+  },
+  {
+    "rank": 37,
+    "spanish": "él",
+    "normalized": "el",
+    "turkish": "eril artikel"
+  },
+  {
+    "rank": 38,
+    "spanish": "uno",
+    "normalized": "uno",
+    "turkish": "bir"
+  },
+  {
+    "rank": 39,
+    "spanish": "mismo",
+    "normalized": "mismo",
+    "turkish": "ayni, kendisi"
+  },
+  {
+    "rank": 40,
+    "spanish": "ahora",
+    "normalized": "ahora",
+    "turkish": "simdi"
+  },
+  {
+    "rank": 41,
+    "spanish": "cada",
+    "normalized": "cada",
+    "turkish": "her"
+  },
+  {
+    "rank": 42,
+    "spanish": "vida",
+    "normalized": "vida",
+    "turkish": "hayat"
+  },
+  {
+    "rank": 43,
+    "spanish": "algo",
+    "normalized": "algo",
+    "turkish": "bir sey"
+  },
+  {
+    "rank": 44,
+    "spanish": "gobierno",
+    "normalized": "gobierno",
+    "turkish": "hukumet"
+  },
+  {
+    "rank": 45,
+    "spanish": "día",
+    "normalized": "dia",
+    "turkish": "gun"
+  },
+  {
+    "rank": 46,
+    "spanish": "tres",
+    "normalized": "tres",
+    "turkish": "uc"
+  },
+  {
+    "rank": 47,
+    "spanish": "ella",
+    "normalized": "ella",
+    "turkish": "o kadin"
+  },
+  {
+    "rank": 48,
+    "spanish": "país",
+    "normalized": "pais",
+    "turkish": "ulke"
+  },
+  {
+    "rank": 49,
+    "spanish": "mundo",
+    "normalized": "mundo",
+    "turkish": "dunya"
+  },
+  {
+    "rank": 50,
+    "spanish": "tiempo",
+    "normalized": "tiempo",
+    "turkish": "zaman, hava"
+  },
+  {
+    "rank": 51,
+    "spanish": "tan",
+    "normalized": "tan",
+    "turkish": "yani"
+  },
+  {
+    "rank": 52,
+    "spanish": "durante",
+    "normalized": "durante",
+    "turkish": "sirasinda"
+  },
+  {
+    "rank": 53,
+    "spanish": "siempre",
+    "normalized": "siempre",
+    "turkish": "her zaman"
+  },
+  {
+    "rank": 54,
+    "spanish": "casa",
+    "normalized": "casa",
+    "turkish": "ev"
+  },
+  {
+    "rank": 55,
+    "spanish": "dijo",
+    "normalized": "dijo",
+    "turkish": "dedi"
+  },
+  {
+    "rank": 56,
+    "spanish": "sí",
+    "normalized": "si",
+    "turkish": "evet, eger"
+  },
+  {
+    "rank": 57,
+    "spanish": "gran",
+    "normalized": "gran",
+    "turkish": "buyuk"
+  },
+  {
+    "rank": 58,
+    "spanish": "según",
+    "normalized": "segun",
+    "turkish": "gore"
+  },
+  {
+    "rank": 59,
+    "spanish": "menos",
+    "normalized": "menos",
+    "turkish": "daha az"
+  },
+  {
+    "rank": 60,
+    "spanish": "estado",
+    "normalized": "estado",
+    "turkish": "devlet, durum"
+  },
+  {
+    "rank": 61,
+    "spanish": "contra",
+    "normalized": "contra",
+    "turkish": "karsi"
+  },
+  {
+    "rank": 62,
+    "spanish": "sino",
+    "normalized": "sino",
+    "turkish": "ama"
+  },
+  {
+    "rank": 63,
+    "spanish": "forma",
+    "normalized": "forma",
+    "turkish": "sekil"
+  },
+  {
+    "rank": 64,
+    "spanish": "mayor",
+    "normalized": "mayor",
+    "turkish": "daha buyuk"
+  },
+  {
+    "rank": 65,
+    "spanish": "caso",
+    "normalized": "caso",
+    "turkish": "durum, vaka"
+  },
+  {
+    "rank": 66,
+    "spanish": "nada",
+    "normalized": "nada",
+    "turkish": "hicbir sey"
+  },
+  {
+    "rank": 67,
+    "spanish": "general",
+    "normalized": "general",
+    "turkish": "genel"
+  },
+  {
+    "rank": 68,
+    "spanish": "poco",
+    "normalized": "poco",
+    "turkish": "az"
+  },
+  {
+    "rank": 69,
+    "spanish": "presidente",
+    "normalized": "presidente",
+    "turkish": "baskan"
+  },
+  {
+    "rank": 70,
+    "spanish": "donde",
+    "normalized": "donde",
+    "turkish": "nerede"
+  },
+  {
+    "rank": 71,
+    "spanish": "unos",
+    "normalized": "unos",
+    "turkish": "bazıları"
+  },
+  {
+    "rank": 72,
+    "spanish": "así",
+    "normalized": "asi",
+    "turkish": "yani"
+  },
+  {
+    "rank": 73,
+    "spanish": "si",
+    "normalized": "si",
+    "turkish": "evet, eger"
+  },
+  {
+    "rank": 74,
+    "spanish": "hasta",
+    "normalized": "hasta",
+    "turkish": "kadar"
+  },
+  {
+    "rank": 75,
+    "spanish": "cuando",
+    "normalized": "cuando",
+    "turkish": "ne zaman"
+  },
+  {
+    "rank": 76,
+    "spanish": "como",
+    "normalized": "como",
+    "turkish": "nasil, gibi"
+  },
+  {
+    "rank": 77,
+    "spanish": "bien",
+    "normalized": "bien",
+    "turkish": "iyi"
+  },
+  {
+    "rank": 78,
+    "spanish": "aunque",
+    "normalized": "aunque",
+    "turkish": "her ne kadar"
+  },
+  {
+    "rank": 79,
+    "spanish": "porque",
+    "normalized": "porque",
+    "turkish": "cunku"
+  },
+  {
+    "rank": 80,
+    "spanish": "hacia",
+    "normalized": "hacia",
+    "turkish": "doğru"
+  },
+  {
+    "rank": 81,
+    "spanish": "tanto",
+    "normalized": "tanto",
+    "turkish": "çok fazla"
+  },
+  {
+    "rank": 82,
+    "spanish": "ellos",
+    "normalized": "ellos",
+    "turkish": "onlar"
+  },
+  {
+    "rank": 83,
+    "spanish": "ayer",
+    "normalized": "ayer",
+    "turkish": "dun"
+  },
+  {
+    "rank": 84,
+    "spanish": "hecho",
+    "normalized": "hecho",
+    "turkish": "gerçek"
+  },
+  {
+    "rank": 85,
+    "spanish": "momento",
+    "normalized": "momento",
+    "turkish": "an"
+  },
+  {
+    "rank": 86,
+    "spanish": "mucho",
+    "normalized": "mucho",
+    "turkish": "cok"
+  },
+  {
+    "rank": 87,
+    "spanish": "mientras",
+    "normalized": "mientras",
+    "turkish": "iken"
+  },
+  {
+    "rank": 88,
+    "spanish": "además",
+    "normalized": "ademas",
+    "turkish": "ayrica"
+  },
+  {
+    "rank": 89,
+    "spanish": "quien",
+    "normalized": "quien",
+    "turkish": "kim"
+  },
+  {
+    "rank": 90,
+    "spanish": "algunos",
+    "normalized": "algunos",
+    "turkish": "bazilari"
+  },
+  {
+    "rank": 91,
+    "spanish": "millones",
+    "normalized": "millones",
+    "turkish": "milyonlar"
+  },
+  {
+    "rank": 92,
+    "spanish": "esto",
+    "normalized": "esto",
+    "turkish": "bu"
+  },
+  {
+    "rank": 93,
+    "spanish": "España",
+    "normalized": "espana",
+    "turkish": "Ispanya"
+  },
+  {
+    "rank": 94,
+    "spanish": "hombre",
+    "normalized": "hombre",
+    "turkish": "adam, insan"
+  },
+  {
+    "rank": 95,
+    "spanish": "pues",
+    "normalized": "pues",
+    "turkish": "peki"
+  },
+  {
+    "rank": 96,
+    "spanish": "hoy",
+    "normalized": "hoy",
+    "turkish": "bugun"
+  },
+  {
+    "rank": 97,
+    "spanish": "lugar",
+    "normalized": "lugar",
+    "turkish": "yer"
+  },
+  {
+    "rank": 98,
+    "spanish": "hacer",
+    "normalized": "hacer",
+    "turkish": "yapmak"
+  },
+  {
+    "rank": 99,
+    "spanish": "nacional",
+    "normalized": "nacional",
+    "turkish": "ulusal"
+  },
+  {
+    "rank": 100,
+    "spanish": "trabajo",
+    "normalized": "trabajo",
+    "turkish": "is, calisma"
+  },
+  {
+    "rank": 101,
+    "spanish": "antes",
+    "normalized": "antes",
+    "turkish": "once"
+  },
+  {
+    "rank": 102,
+    "spanish": "después",
+    "normalized": "despues",
+    "turkish": "sonra"
+  },
+  {
+    "rank": 103,
+    "spanish": "otro",
+    "normalized": "otro",
+    "turkish": "baska, diger"
+  },
+  {
+    "rank": 104,
+    "spanish": "mejor",
+    "normalized": "mejor",
+    "turkish": "daha iyi"
+  },
+  {
+    "rank": 105,
+    "spanish": "nuevo",
+    "normalized": "nuevo",
+    "turkish": "yeni"
+  },
+  {
+    "rank": 106,
+    "spanish": "decir",
+    "normalized": "decir",
+    "turkish": "soylemek"
+  },
+  {
+    "rank": 107,
+    "spanish": "primero",
+    "normalized": "primero",
+    "turkish": "birinci, once"
+  },
+  {
+    "rank": 108,
+    "spanish": "entonces",
+    "normalized": "entonces",
+    "turkish": "o zaman"
+  },
+  {
+    "rank": 109,
+    "spanish": "deber",
+    "normalized": "deber",
+    "turkish": "gerekmek"
+  },
+  {
+    "rank": 110,
+    "spanish": "política",
+    "normalized": "politica",
+    "turkish": "politika"
+  },
+  {
+    "rank": 111,
+    "spanish": "cómo",
+    "normalized": "como",
+    "turkish": "nasil, gibi"
+  },
+  {
+    "rank": 112,
+    "spanish": "casi",
+    "normalized": "casi",
+    "turkish": "neredeyse"
+  },
+  {
+    "rank": 113,
+    "spanish": "tal",
+    "normalized": "tal",
+    "turkish": "böyle"
+  },
+  {
+    "rank": 114,
+    "spanish": "luego",
+    "normalized": "luego",
+    "turkish": "sonra"
+  },
+  {
+    "rank": 115,
+    "spanish": "pasado",
+    "normalized": "pasado",
+    "turkish": "gecmis"
+  },
+  {
+    "rank": 116,
+    "spanish": "medio",
+    "normalized": "medio",
+    "turkish": "orta"
+  },
+  {
+    "rank": 117,
+    "spanish": "nunca",
+    "normalized": "nunca",
+    "turkish": "asla"
+  },
+  {
+    "rank": 118,
+    "spanish": "poder",
+    "normalized": "poder",
+    "turkish": "yapabilmek, guc"
+  },
+  {
+    "rank": 119,
+    "spanish": "aquí",
+    "normalized": "aqui",
+    "turkish": "burada"
+  },
+  {
+    "rank": 120,
+    "spanish": "ver",
+    "normalized": "ver",
+    "turkish": "gormek"
+  },
+  {
+    "rank": 121,
+    "spanish": "vez",
+    "normalized": "vez",
+    "turkish": "kez, defa"
+  },
+  {
+    "rank": 122,
+    "spanish": "sin embargo",
+    "normalized": "sin embargo",
+    "turkish": "ancak"
+  },
+  {
+    "rank": 123,
+    "spanish": "partido",
+    "normalized": "partido",
+    "turkish": "parti, mac"
+  },
+  {
+    "rank": 124,
+    "spanish": "persona",
+    "normalized": "persona",
+    "turkish": "kisi"
+  },
+  {
+    "rank": 125,
+    "spanish": "grupo",
+    "normalized": "grupo",
+    "turkish": "grup"
+  },
+  {
+    "rank": 126,
+    "spanish": "cuenta",
+    "normalized": "cuenta",
+    "turkish": "hesap"
+  },
+  {
+    "rank": 127,
+    "spanish": "cuál",
+    "normalized": "cual",
+    "turkish": "hangisi"
+  },
+  {
+    "rank": 128,
+    "spanish": "mujer",
+    "normalized": "mujer",
+    "turkish": "kadin"
+  },
+  {
+    "rank": 129,
+    "spanish": "frente",
+    "normalized": "frente",
+    "turkish": "ön"
+  },
+  {
+    "rank": 130,
+    "spanish": "tras",
+    "normalized": "tras",
+    "turkish": "sonra"
+  },
+  {
+    "rank": 131,
+    "spanish": "cosa",
+    "normalized": "cosa",
+    "turkish": "sey"
+  },
+  {
+    "rank": 132,
+    "spanish": "fin",
+    "normalized": "fin",
+    "turkish": "son"
+  },
+  {
+    "rank": 133,
+    "spanish": "ciudad",
+    "normalized": "ciudad",
+    "turkish": "sehir"
+  },
+  {
+    "rank": 134,
+    "spanish": "social",
+    "normalized": "social",
+    "turkish": "sosyal"
+  },
+  {
+    "rank": 135,
+    "spanish": "manera",
+    "normalized": "manera",
+    "turkish": "yol"
+  },
+  {
+    "rank": 136,
+    "spanish": "tener",
+    "normalized": "tener",
+    "turkish": "sahip olmak"
+  },
+  {
+    "rank": 137,
+    "spanish": "sistema",
+    "normalized": "sistema",
+    "turkish": "sistem"
+  },
+  {
+    "rank": 138,
+    "spanish": "historia",
+    "normalized": "historia",
+    "turkish": "tarih, hikaye"
+  },
+  {
+    "rank": 139,
+    "spanish": "tipo",
+    "normalized": "tipo",
+    "turkish": "tip, tur"
+  },
+  {
+    "rank": 140,
+    "spanish": "cuatro",
+    "normalized": "cuatro",
+    "turkish": "dort"
+  },
+  {
+    "rank": 141,
+    "spanish": "dentro",
+    "normalized": "dentro",
+    "turkish": "icinde"
+  },
+  {
+    "rank": 142,
+    "spanish": "nuestro",
+    "normalized": "nuestro",
+    "turkish": "bizim"
+  },
+  {
+    "rank": 143,
+    "spanish": "punto",
+    "normalized": "punto",
+    "turkish": "nokta"
+  },
+  {
+    "rank": 144,
+    "spanish": "cualquier",
+    "normalized": "cualquier",
+    "turkish": "herhangi biri"
+  },
+  {
+    "rank": 145,
+    "spanish": "noche",
+    "normalized": "noche",
+    "turkish": "gece"
+  },
+  {
+    "rank": 146,
+    "spanish": "madre",
+    "normalized": "madre",
+    "turkish": "anne"
+  },
+  {
+    "rank": 147,
+    "spanish": "aún",
+    "normalized": "aun",
+    "turkish": "henuz, hala"
+  },
+  {
+    "rank": 148,
+    "spanish": "agua",
+    "normalized": "agua",
+    "turkish": "su"
+  },
+  {
+    "rank": 149,
+    "spanish": "parecer",
+    "normalized": "parecer",
+    "turkish": "gorunmek"
+  },
+  {
+    "rank": 150,
+    "spanish": "mes",
+    "normalized": "mes",
+    "turkish": "ay"
+  },
+  {
+    "rank": 151,
+    "spanish": "situación",
+    "normalized": "situacion",
+    "turkish": "durum"
+  },
+  {
+    "rank": 152,
+    "spanish": "fuera",
+    "normalized": "fuera",
+    "turkish": "disarida"
+  },
+  {
+    "rank": 153,
+    "spanish": "bajo",
+    "normalized": "bajo",
+    "turkish": "altinda, dusuk"
+  },
+  {
+    "rank": 154,
+    "spanish": "grande",
+    "normalized": "grande",
+    "turkish": "buyuk"
+  },
+  {
+    "rank": 155,
+    "spanish": "ejemplo",
+    "normalized": "ejemplo",
+    "turkish": "ornek"
+  },
+  {
+    "rank": 156,
+    "spanish": "acuerdo",
+    "normalized": "acuerdo",
+    "turkish": "anlasma"
+  },
+  {
+    "rank": 157,
+    "spanish": "usted",
+    "normalized": "usted",
+    "turkish": "siz"
+  },
+  {
+    "rank": 158,
+    "spanish": "nadie",
+    "normalized": "nadie",
+    "turkish": "hic kimse"
+  },
+  {
+    "rank": 159,
+    "spanish": "hora",
+    "normalized": "hora",
+    "turkish": "saat"
+  },
+  {
+    "rank": 160,
+    "spanish": "posible",
+    "normalized": "posible",
+    "turkish": "mumkun"
+  },
+  {
+    "rank": 161,
+    "spanish": "tarde",
+    "normalized": "tarde",
+    "turkish": "ogleden sonra, gec"
+  },
+  {
+    "rank": 162,
+    "spanish": "ley",
+    "normalized": "ley",
+    "turkish": "yasa"
+  },
+  {
+    "rank": 163,
+    "spanish": "importante",
+    "normalized": "importante",
+    "turkish": "onemli"
+  },
+  {
+    "rank": 164,
+    "spanish": "centro",
+    "normalized": "centro",
+    "turkish": "merkez"
+  },
+  {
+    "rank": 165,
+    "spanish": "padre",
+    "normalized": "padre",
+    "turkish": "baba"
+  },
+  {
+    "rank": 166,
+    "spanish": "proceso",
+    "normalized": "proceso",
+    "turkish": "surec"
+  },
+  {
+    "rank": 167,
+    "spanish": "cuerpo",
+    "normalized": "cuerpo",
+    "turkish": "vucut"
+  },
+  {
+    "rank": 168,
+    "spanish": "sentido",
+    "normalized": "sentido",
+    "turkish": "anlam, duyu"
+  },
+  {
+    "rank": 169,
+    "spanish": "lado",
+    "normalized": "lado",
+    "turkish": "taraf"
+  },
+  {
+    "rank": 170,
+    "spanish": "tu",
+    "normalized": "tu",
+    "turkish": "senin"
+  },
+  {
+    "rank": 171,
+    "spanish": "cambio",
+    "normalized": "cambio",
+    "turkish": "degisim"
+  },
+  {
+    "rank": 172,
+    "spanish": "allí",
+    "normalized": "alli",
+    "turkish": "orada"
+  },
+  {
+    "rank": 173,
+    "spanish": "mano",
+    "normalized": "mano",
+    "turkish": "el"
+  },
+  {
+    "rank": 174,
+    "spanish": "estar",
+    "normalized": "estar",
+    "turkish": "olmak, bulunmak"
+  },
+  {
+    "rank": 175,
+    "spanish": "número",
+    "normalized": "numero",
+    "turkish": "sayi, numara"
+  },
+  {
+    "rank": 176,
+    "spanish": "problema",
+    "normalized": "problema",
+    "turkish": "problem"
+  },
+  {
+    "rank": 177,
+    "spanish": "sociedad",
+    "normalized": "sociedad",
+    "turkish": "toplum"
+  },
+  {
+    "rank": 178,
+    "spanish": "guerra",
+    "normalized": "guerra",
+    "turkish": "savas"
+  },
+  {
+    "rank": 179,
+    "spanish": "desarrollo",
+    "normalized": "desarrollo",
+    "turkish": "gelisme"
+  },
+  {
+    "rank": 180,
+    "spanish": "gente",
+    "normalized": "gente",
+    "turkish": "insanlar"
+  },
+  {
+    "rank": 181,
+    "spanish": "final",
+    "normalized": "final",
+    "turkish": "son"
+  },
+  {
+    "rank": 182,
+    "spanish": "relación",
+    "normalized": "relacion",
+    "turkish": "iliski"
+  },
+  {
+    "rank": 183,
+    "spanish": "realidad",
+    "normalized": "realidad",
+    "turkish": "gerceklik"
+  },
+  {
+    "rank": 184,
+    "spanish": "obra",
+    "normalized": "obra",
+    "turkish": "eser, is"
+  },
+  {
+    "rank": 185,
+    "spanish": "incluso",
+    "normalized": "incluso",
+    "turkish": "hatta"
+  },
+  {
+    "rank": 186,
+    "spanish": "a través de",
+    "normalized": "a traves de",
+    "turkish": "aracılığıyla"
+  },
+  {
+    "rank": 187,
+    "spanish": "último",
+    "normalized": "ultimo",
+    "turkish": "sonuncu"
+  },
+  {
+    "rank": 188,
+    "spanish": "ya",
+    "normalized": "ya",
+    "turkish": "artik, zaten"
+  },
+  {
+    "rank": 189,
+    "spanish": "mi",
+    "normalized": "mi",
+    "turkish": "benim"
+  },
+  {
+    "rank": 190,
+    "spanish": "modo",
+    "normalized": "modo",
+    "turkish": "yol, bicim"
+  },
+  {
+    "rank": 191,
+    "spanish": "cinco",
+    "normalized": "cinco",
+    "turkish": "bes"
+  },
+  {
+    "rank": 192,
+    "spanish": "información",
+    "normalized": "informacion",
+    "turkish": "bilgi"
+  },
+  {
+    "rank": 193,
+    "spanish": "ojo",
+    "normalized": "ojo",
+    "turkish": "goz"
+  },
+  {
+    "rank": 194,
+    "spanish": "muerte",
+    "normalized": "muerte",
+    "turkish": "olum"
+  },
+  {
+    "rank": 195,
+    "spanish": "nombre",
+    "normalized": "nombre",
+    "turkish": "isim"
+  },
+  {
+    "rank": 196,
+    "spanish": "público",
+    "normalized": "publico",
+    "turkish": "halk, kamu"
+  },
+  {
+    "rank": 197,
+    "spanish": "siglo",
+    "normalized": "siglo",
+    "turkish": "yuzyil"
+  },
+  {
+    "rank": 198,
+    "spanish": "todavía",
+    "normalized": "todavia",
+    "turkish": "hala"
+  },
+  {
+    "rank": 199,
+    "spanish": "mañana",
+    "normalized": "manana",
+    "turkish": "yarin, sabah"
+  },
+  {
+    "rank": 200,
+    "spanish": "eso",
+    "normalized": "eso",
+    "turkish": "bu, su"
+  },
+  {
+    "rank": 201,
+    "spanish": "nosotros",
+    "normalized": "nosotros",
+    "turkish": "biz"
+  },
+  {
+    "rank": 202,
+    "spanish": "sido",
+    "normalized": "sido",
+    "turkish": "oldu"
+  },
+  {
+    "rank": 203,
+    "spanish": "pueblo",
+    "normalized": "pueblo",
+    "turkish": "halk, koy"
+  },
+  {
+    "rank": 204,
+    "spanish": "haber",
+    "normalized": "haber",
+    "turkish": "olmak, var olmak"
+  },
+  {
+    "rank": 205,
+    "spanish": "dar",
+    "normalized": "dar",
+    "turkish": "vermek"
+  },
+  {
+    "rank": 206,
+    "spanish": "desde",
+    "normalized": "desde",
+    "turkish": "-den beri"
+  },
+  {
+    "rank": 207,
+    "spanish": "tú",
+    "normalized": "tu",
+    "turkish": "senin"
+  },
+  {
+    "rank": 208,
+    "spanish": "derecho",
+    "normalized": "derecho",
+    "turkish": "hak, sag"
+  },
+  {
+    "rank": 209,
+    "spanish": "verdad",
+    "normalized": "verdad",
+    "turkish": "gercek"
+  },
+  {
+    "rank": 210,
+    "spanish": "unido",
+    "normalized": "unido",
+    "turkish": "birleşik"
+  },
+  {
+    "rank": 211,
+    "spanish": "juntos",
+    "normalized": "juntos",
+    "turkish": "birlikte"
+  },
+  {
+    "rank": 212,
+    "spanish": "cabeza",
+    "normalized": "cabeza",
+    "turkish": "bas"
+  },
+  {
+    "rank": 213,
+    "spanish": "aquel",
+    "normalized": "aquel",
+    "turkish": "o"
+  },
+  {
+    "rank": 214,
+    "spanish": "cuánto",
+    "normalized": "cuanto",
+    "turkish": "ne kadar"
+  },
+  {
+    "rank": 215,
+    "spanish": "tierra",
+    "normalized": "tierra",
+    "turkish": "toprak, dunya"
+  },
+  {
+    "rank": 216,
+    "spanish": "equipo",
+    "normalized": "equipo",
+    "turkish": "ekip"
+  },
+  {
+    "rank": 217,
+    "spanish": "segundo",
+    "normalized": "segundo",
+    "turkish": "ikinci, saniye"
+  },
+  {
+    "rank": 218,
+    "spanish": "director",
+    "normalized": "director",
+    "turkish": "mudur, yonetmen"
+  },
+  {
+    "rank": 219,
+    "spanish": "dicho",
+    "normalized": "dicho",
+    "turkish": "dedi"
+  },
+  {
+    "rank": 220,
+    "spanish": "cierto",
+    "normalized": "cierto",
+    "turkish": "dogru, belli"
+  },
+  {
+    "rank": 221,
+    "spanish": "nivel",
+    "normalized": "nivel",
+    "turkish": "seviye"
+  },
+  {
+    "rank": 222,
+    "spanish": "familia",
+    "normalized": "familia",
+    "turkish": "aile"
+  },
+  {
+    "rank": 223,
+    "spanish": "largo",
+    "normalized": "largo",
+    "turkish": "uzun"
+  },
+  {
+    "rank": 224,
+    "spanish": "partir",
+    "normalized": "partir",
+    "turkish": "ayrılmak"
+  },
+  {
+    "rank": 225,
+    "spanish": "faltar",
+    "normalized": "faltar",
+    "turkish": "kayıp"
+  },
+  {
+    "rank": 226,
+    "spanish": "llegar",
+    "normalized": "llegar",
+    "turkish": "varmak"
+  },
+  {
+    "rank": 227,
+    "spanish": "propio",
+    "normalized": "propio",
+    "turkish": "kendi"
+  },
+  {
+    "rank": 228,
+    "spanish": "ministro",
+    "normalized": "ministro",
+    "turkish": "bakan"
+  },
+  {
+    "rank": 229,
+    "spanish": "seguridad",
+    "normalized": "seguridad",
+    "turkish": "guvenlik"
+  },
+  {
+    "rank": 230,
+    "spanish": "malo",
+    "normalized": "malo",
+    "turkish": "kotu"
+  },
+  {
+    "rank": 231,
+    "spanish": "tratar",
+    "normalized": "tratar",
+    "turkish": "tedavi etmek"
+  },
+  {
+    "rank": 232,
+    "spanish": "respeto",
+    "normalized": "respeto",
+    "turkish": "saygı"
+  },
+  {
+    "rank": 233,
+    "spanish": "semana",
+    "normalized": "semana",
+    "turkish": "hafta"
+  },
+  {
+    "rank": 234,
+    "spanish": "varios",
+    "normalized": "varios",
+    "turkish": "çeşitli"
+  },
+  {
+    "rank": 235,
+    "spanish": "real",
+    "normalized": "real",
+    "turkish": "gerçek"
+  },
+  {
+    "rank": 236,
+    "spanish": "voz",
+    "normalized": "voz",
+    "turkish": "ses"
+  },
+  {
+    "rank": 237,
+    "spanish": "paso",
+    "normalized": "paso",
+    "turkish": "adım"
+  },
+  {
+    "rank": 238,
+    "spanish": "señor",
+    "normalized": "senor",
+    "turkish": "bay"
+  },
+  {
+    "rank": 239,
+    "spanish": "mil",
+    "normalized": "mil",
+    "turkish": "bin"
+  },
+  {
+    "rank": 240,
+    "spanish": "proyecto",
+    "normalized": "proyecto",
+    "turkish": "proje"
+  },
+  {
+    "rank": 241,
+    "spanish": "mercado",
+    "normalized": "mercado",
+    "turkish": "pazar"
+  },
+  {
+    "rank": 242,
+    "spanish": "mayoría",
+    "normalized": "mayoria",
+    "turkish": "çoğunluk"
+  },
+  {
+    "rank": 243,
+    "spanish": "luz",
+    "normalized": "luz",
+    "turkish": "isik"
+  },
+  {
+    "rank": 244,
+    "spanish": "claro",
+    "normalized": "claro",
+    "turkish": "acik, net"
+  },
+  {
+    "rank": 245,
+    "spanish": "este",
+    "normalized": "este",
+    "turkish": "bu"
+  },
+  {
+    "rank": 246,
+    "spanish": "orden",
+    "normalized": "orden",
+    "turkish": "sipariş"
+  },
+  {
+    "rank": 247,
+    "spanish": "español",
+    "normalized": "espanol",
+    "turkish": "Ispanyolca, Ispanyol"
+  },
+  {
+    "rank": 248,
+    "spanish": "bueno",
+    "normalized": "bueno",
+    "turkish": "iyi"
+  },
+  {
+    "rank": 249,
+    "spanish": "querer",
+    "normalized": "querer",
+    "turkish": "istemek, sevmek"
+  },
+  {
+    "rank": 250,
+    "spanish": "programa",
+    "normalized": "programa",
+    "turkish": "programı"
+  },
+  {
+    "rank": 251,
+    "spanish": "palabra",
+    "normalized": "palabra",
+    "turkish": "kelime"
+  },
+  {
+    "rank": 252,
+    "spanish": "internacional",
+    "normalized": "internacional",
+    "turkish": "uluslararası"
+  },
+  {
+    "rank": 253,
+    "spanish": "empresa",
+    "normalized": "empresa",
+    "turkish": "sirket"
+  },
+  {
+    "rank": 254,
+    "spanish": "puesto",
+    "normalized": "puesto",
+    "turkish": "pozisyon"
+  },
+  {
+    "rank": 255,
+    "spanish": "ahí",
+    "normalized": "ahi",
+    "turkish": "orada"
+  },
+  {
+    "rank": 256,
+    "spanish": "libro",
+    "normalized": "libro",
+    "turkish": "kitap"
+  },
+  {
+    "rank": 257,
+    "spanish": "igual",
+    "normalized": "igual",
+    "turkish": "aynı"
+  },
+  {
+    "rank": 258,
+    "spanish": "político",
+    "normalized": "politico",
+    "turkish": "politikacı"
+  },
+  {
+    "rank": 259,
+    "spanish": "total",
+    "normalized": "total",
+    "turkish": "toplam"
+  },
+  {
+    "rank": 260,
+    "spanish": "creer",
+    "normalized": "creer",
+    "turkish": "inanmak"
+  },
+  {
+    "rank": 261,
+    "spanish": "dios",
+    "normalized": "dios",
+    "turkish": "tanrı"
+  },
+  {
+    "rank": 262,
+    "spanish": "condición",
+    "normalized": "condicion",
+    "turkish": "durum"
+  },
+  {
+    "rank": 263,
+    "spanish": "México",
+    "normalized": "mexico",
+    "turkish": "Meksika"
+  },
+  {
+    "rank": 264,
+    "spanish": "fuerza",
+    "normalized": "fuerza",
+    "turkish": "güç"
+  },
+  {
+    "rank": 265,
+    "spanish": "solo",
+    "normalized": "solo",
+    "turkish": "yalnız"
+  },
+  {
+    "rank": 266,
+    "spanish": "único",
+    "normalized": "unico",
+    "turkish": "benzersiz"
+  },
+  {
+    "rank": 267,
+    "spanish": "acción",
+    "normalized": "accion",
+    "turkish": "eylem"
+  },
+  {
+    "rank": 268,
+    "spanish": "amor",
+    "normalized": "amor",
+    "turkish": "ask, sevgi"
+  },
+  {
+    "rank": 269,
+    "spanish": "policía",
+    "normalized": "policia",
+    "turkish": "polis"
+  },
+  {
+    "rank": 270,
+    "spanish": "puerta",
+    "normalized": "puerta",
+    "turkish": "kapi"
+  },
+  {
+    "rank": 271,
+    "spanish": "pesar",
+    "normalized": "pesar",
+    "turkish": "tartmak"
+  },
+  {
+    "rank": 272,
+    "spanish": "zona",
+    "normalized": "zona",
+    "turkish": "bölge"
+  },
+  {
+    "rank": 273,
+    "spanish": "saber",
+    "normalized": "saber",
+    "turkish": "bilmek"
+  },
+  {
+    "rank": 274,
+    "spanish": "calle",
+    "normalized": "calle",
+    "turkish": "sokak"
+  },
+  {
+    "rank": 275,
+    "spanish": "interior",
+    "normalized": "interior",
+    "turkish": "iç"
+  },
+  {
+    "rank": 276,
+    "spanish": "tampoco",
+    "normalized": "tampoco",
+    "turkish": "ikisi de"
+  },
+  {
+    "rank": 277,
+    "spanish": "música",
+    "normalized": "musica",
+    "turkish": "muzik"
+  },
+  {
+    "rank": 278,
+    "spanish": "ningún",
+    "normalized": "ningun",
+    "turkish": "hiçbiri"
+  },
+  {
+    "rank": 279,
+    "spanish": "vista",
+    "normalized": "vista",
+    "turkish": "görünüm"
+  },
+  {
+    "rank": 280,
+    "spanish": "campo",
+    "normalized": "campo",
+    "turkish": "alan"
+  },
+  {
+    "rank": 281,
+    "spanish": "razón",
+    "normalized": "razon",
+    "turkish": "sebep"
+  },
+  {
+    "rank": 282,
+    "spanish": "niño",
+    "normalized": "nino",
+    "turkish": "cocuk"
+  },
+  {
+    "rank": 283,
+    "spanish": "presencia",
+    "normalized": "presencia",
+    "turkish": "mevcudiyet"
+  },
+  {
+    "rank": 284,
+    "spanish": "tema",
+    "normalized": "tema",
+    "turkish": "tema"
+  },
+  {
+    "rank": 285,
+    "spanish": "dinero",
+    "normalized": "dinero",
+    "turkish": "para"
+  },
+  {
+    "rank": 286,
+    "spanish": "comisión",
+    "normalized": "comision",
+    "turkish": "komisyon"
+  },
+  {
+    "rank": 287,
+    "spanish": "servicio",
+    "normalized": "servicio",
+    "turkish": "hizmet"
+  },
+  {
+    "rank": 288,
+    "spanish": "hijo",
+    "normalized": "hijo",
+    "turkish": "ogul, cocuk"
+  },
+  {
+    "rank": 289,
+    "spanish": "cien",
+    "normalized": "cien",
+    "turkish": "yuz"
+  },
+  {
+    "rank": 290,
+    "spanish": "hablar",
+    "normalized": "hablar",
+    "turkish": "konusmak"
+  },
+  {
+    "rank": 291,
+    "spanish": "minuto",
+    "normalized": "minuto",
+    "turkish": "dakika"
+  },
+  {
+    "rank": 292,
+    "spanish": "producción",
+    "normalized": "produccion",
+    "turkish": "üretim"
+  },
+  {
+    "rank": 293,
+    "spanish": "camino",
+    "normalized": "camino",
+    "turkish": "yol"
+  },
+  {
+    "rank": 294,
+    "spanish": "seis",
+    "normalized": "seis",
+    "turkish": "alti"
+  },
+  {
+    "rank": 295,
+    "spanish": "quién",
+    "normalized": "quien",
+    "turkish": "kim"
+  },
+  {
+    "rank": 296,
+    "spanish": "fondo",
+    "normalized": "fondo",
+    "turkish": "arka plan"
+  },
+  {
+    "rank": 297,
+    "spanish": "dirección",
+    "normalized": "direccion",
+    "turkish": "adres"
+  },
+  {
+    "rank": 298,
+    "spanish": "papel",
+    "normalized": "papel",
+    "turkish": "kagit, rol"
+  },
+  {
+    "rank": 299,
+    "spanish": "demás",
+    "normalized": "demas",
+    "turkish": "diğerleri"
+  },
+  {
+    "rank": 300,
+    "spanish": "idea",
+    "normalized": "idea",
+    "turkish": "fikir"
+  },
+  {
+    "rank": 301,
+    "spanish": "especial",
+    "normalized": "especial",
+    "turkish": "ozel"
+  },
+  {
+    "rank": 302,
+    "spanish": "diferente",
+    "normalized": "diferente",
+    "turkish": "farkli"
+  },
+  {
+    "rank": 303,
+    "spanish": "base",
+    "normalized": "base",
+    "turkish": "baz"
+  },
+  {
+    "rank": 304,
+    "spanish": "capital",
+    "normalized": "capital",
+    "turkish": "sermaye"
+  },
+  {
+    "rank": 305,
+    "spanish": "ambos",
+    "normalized": "ambos",
+    "turkish": "ikisi de"
+  },
+  {
+    "rank": 306,
+    "spanish": "Europa",
+    "normalized": "europa",
+    "turkish": "Avrupa"
+  },
+  {
+    "rank": 307,
+    "spanish": "libertad",
+    "normalized": "libertad",
+    "turkish": "ozgurluk"
+  },
+  {
+    "rank": 308,
+    "spanish": "espacio",
+    "normalized": "espacio",
+    "turkish": "alan, uzay"
+  },
+  {
+    "rank": 309,
+    "spanish": "medios",
+    "normalized": "medios",
+    "turkish": "medya"
+  },
+  {
+    "rank": 310,
+    "spanish": "ir",
+    "normalized": "ir",
+    "turkish": "gitmek"
+  },
+  {
+    "rank": 311,
+    "spanish": "actual",
+    "normalized": "actual",
+    "turkish": "akım"
+  },
+  {
+    "rank": 312,
+    "spanish": "población",
+    "normalized": "poblacion",
+    "turkish": "nüfus"
+  },
+  {
+    "rank": 313,
+    "spanish": "estudio",
+    "normalized": "estudio",
+    "turkish": "calisma"
+  },
+  {
+    "rank": 314,
+    "spanish": "salud",
+    "normalized": "salud",
+    "turkish": "saglik"
+  },
+  {
+    "rank": 315,
+    "spanish": "principio",
+    "normalized": "principio",
+    "turkish": "prensip"
+  },
+  {
+    "rank": 316,
+    "spanish": "cultura",
+    "normalized": "cultura",
+    "turkish": "kultur"
+  },
+  {
+    "rank": 317,
+    "spanish": "anterior",
+    "normalized": "anterior",
+    "turkish": "önceki"
+  },
+  {
+    "rank": 318,
+    "spanish": "alto",
+    "normalized": "alto",
+    "turkish": "yuksek"
+  },
+  {
+    "rank": 319,
+    "spanish": "mediante",
+    "normalized": "mediante",
+    "turkish": "aracılığıyla"
+  },
+  {
+    "rank": 320,
+    "spanish": "arte",
+    "normalized": "arte",
+    "turkish": "sanat"
+  },
+  {
+    "rank": 321,
+    "spanish": "paz",
+    "normalized": "paz",
+    "turkish": "baris"
+  },
+  {
+    "rank": 322,
+    "spanish": "sector",
+    "normalized": "sector",
+    "turkish": "sektör"
+  },
+  {
+    "rank": 323,
+    "spanish": "imagen",
+    "normalized": "imagen",
+    "turkish": "goruntu"
+  },
+  {
+    "rank": 324,
+    "spanish": "medida",
+    "normalized": "medida",
+    "turkish": "ölçmek"
+  },
+  {
+    "rank": 325,
+    "spanish": "datos",
+    "normalized": "datos",
+    "turkish": "veriler"
+  },
+  {
+    "rank": 326,
+    "spanish": "consejo",
+    "normalized": "consejo",
+    "turkish": "tavsiye"
+  },
+  {
+    "rank": 327,
+    "spanish": "personal",
+    "normalized": "personal",
+    "turkish": "personel"
+  },
+  {
+    "rank": 328,
+    "spanish": "interés",
+    "normalized": "interes",
+    "turkish": "ilgi, faiz"
+  },
+  {
+    "rank": 329,
+    "spanish": "julio",
+    "normalized": "julio",
+    "turkish": "temmuz"
+  },
+  {
+    "rank": 330,
+    "spanish": "miembro",
+    "normalized": "miembro",
+    "turkish": "üye"
+  },
+  {
+    "rank": 331,
+    "spanish": "ninguno",
+    "normalized": "ninguno",
+    "turkish": "hiçbiri"
+  },
+  {
+    "rank": 332,
+    "spanish": "existir",
+    "normalized": "existir",
+    "turkish": "var"
+  },
+  {
+    "rank": 333,
+    "spanish": "cara",
+    "normalized": "cara",
+    "turkish": "yuz"
+  },
+  {
+    "rank": 334,
+    "spanish": "edad",
+    "normalized": "edad",
+    "turkish": "yas"
+  },
+  {
+    "rank": 335,
+    "spanish": "movimiento",
+    "normalized": "movimiento",
+    "turkish": "hareket"
+  },
+  {
+    "rank": 336,
+    "spanish": "actividad",
+    "normalized": "actividad",
+    "turkish": "aktivite"
+  },
+  {
+    "rank": 337,
+    "spanish": "uso",
+    "normalized": "uso",
+    "turkish": "kullanim"
+  },
+  {
+    "rank": 338,
+    "spanish": "difícil",
+    "normalized": "dificil",
+    "turkish": "zor"
+  },
+  {
+    "rank": 339,
+    "spanish": "joven",
+    "normalized": "joven",
+    "turkish": "genc"
+  },
+  {
+    "rank": 340,
+    "spanish": "futuro",
+    "normalized": "futuro",
+    "turkish": "gelecek"
+  },
+  {
+    "rank": 341,
+    "spanish": "pronto",
+    "normalized": "pronto",
+    "turkish": "yakinda"
+  },
+  {
+    "rank": 342,
+    "spanish": "posibilidad",
+    "normalized": "posibilidad",
+    "turkish": "olasılık"
+  },
+  {
+    "rank": 343,
+    "spanish": "seguir",
+    "normalized": "seguir",
+    "turkish": "takip etmek, devam etmek"
+  },
+  {
+    "rank": 344,
+    "spanish": "cerca",
+    "normalized": "cerca",
+    "turkish": "yakin"
+  },
+  {
+    "rank": 345,
+    "spanish": "resultado",
+    "normalized": "resultado",
+    "turkish": "sonuc"
+  },
+  {
+    "rank": 346,
+    "spanish": "educación",
+    "normalized": "educacion",
+    "turkish": "egitim"
+  },
+  {
+    "rank": 347,
+    "spanish": "atención",
+    "normalized": "atencion",
+    "turkish": "dikkat"
+  },
+  {
+    "rank": 348,
+    "spanish": "capacidad",
+    "normalized": "capacidad",
+    "turkish": "kapasite"
+  },
+  {
+    "rank": 349,
+    "spanish": "efecto",
+    "normalized": "efecto",
+    "turkish": "etki"
+  },
+  {
+    "rank": 350,
+    "spanish": "necesario",
+    "normalized": "necesario",
+    "turkish": "gerekli"
+  },
+  {
+    "rank": 351,
+    "spanish": "valor",
+    "normalized": "valor",
+    "turkish": "deger"
+  },
+  {
+    "rank": 352,
+    "spanish": "aire",
+    "normalized": "aire",
+    "turkish": "hava"
+  },
+  {
+    "rank": 353,
+    "spanish": "investigación",
+    "normalized": "investigacion",
+    "turkish": "araştırma"
+  },
+  {
+    "rank": 354,
+    "spanish": "siguiente",
+    "normalized": "siguiente",
+    "turkish": "sonraki"
+  },
+  {
+    "rank": 355,
+    "spanish": "figura",
+    "normalized": "figura",
+    "turkish": "şekil"
+  },
+  {
+    "rank": 356,
+    "spanish": "central",
+    "normalized": "central",
+    "turkish": "merkezi"
+  },
+  {
+    "rank": 357,
+    "spanish": "comunidad",
+    "normalized": "comunidad",
+    "turkish": "topluluk"
+  },
+  {
+    "rank": 358,
+    "spanish": "necesidad",
+    "normalized": "necesidad",
+    "turkish": "ihtiyac"
+  },
+  {
+    "rank": 359,
+    "spanish": "serie",
+    "normalized": "serie",
+    "turkish": "serisi"
+  },
+  {
+    "rank": 360,
+    "spanish": "organización",
+    "normalized": "organizacion",
+    "turkish": "organizasyon"
+  },
+  {
+    "rank": 361,
+    "spanish": "calidad",
+    "normalized": "calidad",
+    "turkish": "kalite"
+  },
+  {
+    "rank": 362,
+    "spanish": "economía",
+    "normalized": "economia",
+    "turkish": "ekonomi"
+  },
+  {
+    "rank": 363,
+    "spanish": "carácter",
+    "normalized": "caracter",
+    "turkish": "karakter"
+  },
+  {
+    "rank": 364,
+    "spanish": "jefe",
+    "normalized": "jefe",
+    "turkish": "sef, patron"
+  },
+  {
+    "rank": 365,
+    "spanish": "prensa",
+    "normalized": "prensa",
+    "turkish": "basin"
+  },
+  {
+    "rank": 366,
+    "spanish": "control",
+    "normalized": "control",
+    "turkish": "kontrol"
+  },
+  {
+    "rank": 367,
+    "spanish": "universidad",
+    "normalized": "universidad",
+    "turkish": "universite"
+  },
+  {
+    "rank": 368,
+    "spanish": "militar",
+    "normalized": "militar",
+    "turkish": "askeri"
+  },
+  {
+    "rank": 369,
+    "spanish": "diez",
+    "normalized": "diez",
+    "turkish": "on"
+  },
+  {
+    "rank": 370,
+    "spanish": "congreso",
+    "normalized": "congreso",
+    "turkish": "kongre"
+  },
+  {
+    "rank": 371,
+    "spanish": "justicia",
+    "normalized": "justicia",
+    "turkish": "adalet"
+  },
+  {
+    "rank": 372,
+    "spanish": "mundial",
+    "normalized": "mundial",
+    "turkish": "dunya capinda"
+  },
+  {
+    "rank": 373,
+    "spanish": "dólar",
+    "normalized": "dolar",
+    "turkish": "dolar"
+  },
+  {
+    "rank": 374,
+    "spanish": "juego",
+    "normalized": "juego",
+    "turkish": "oyun"
+  },
+  {
+    "rank": 375,
+    "spanish": "económico",
+    "normalized": "economico",
+    "turkish": "ekonomik"
+  },
+  {
+    "rank": 376,
+    "spanish": "duda",
+    "normalized": "duda",
+    "turkish": "suphe"
+  },
+  {
+    "rank": 377,
+    "spanish": "recurso",
+    "normalized": "recurso",
+    "turkish": "kaynak"
+  },
+  {
+    "rank": 378,
+    "spanish": "crisis",
+    "normalized": "crisis",
+    "turkish": "kriz"
+  },
+  {
+    "rank": 379,
+    "spanish": "próximo",
+    "normalized": "proximo",
+    "turkish": "sonraki, yakin"
+  },
+  {
+    "rank": 380,
+    "spanish": "decisión",
+    "normalized": "decision",
+    "turkish": "karar"
+  },
+  {
+    "rank": 381,
+    "spanish": "popular",
+    "normalized": "popular",
+    "turkish": "popüler"
+  },
+  {
+    "rank": 382,
+    "spanish": "tenido",
+    "normalized": "tenido",
+    "turkish": "vardı"
+  },
+  {
+    "rank": 383,
+    "spanish": "apenas",
+    "normalized": "apenas",
+    "turkish": "zar zor"
+  },
+  {
+    "rank": 384,
+    "spanish": "época",
+    "normalized": "epoca",
+    "turkish": "dönem"
+  },
+  {
+    "rank": 385,
+    "spanish": "banco",
+    "normalized": "banco",
+    "turkish": "banka"
+  },
+  {
+    "rank": 386,
+    "spanish": "presente",
+    "normalized": "presente",
+    "turkish": "simdi, mevcut"
+  },
+  {
+    "rank": 387,
+    "spanish": "menor",
+    "normalized": "menor",
+    "turkish": "daha kucuk"
+  },
+  {
+    "rank": 388,
+    "spanish": "pasar",
+    "normalized": "pasar",
+    "turkish": "gecmek"
+  },
+  {
+    "rank": 389,
+    "spanish": "televisión",
+    "normalized": "television",
+    "turkish": "televizyon"
+  },
+  {
+    "rank": 390,
+    "spanish": "encontrar",
+    "normalized": "encontrar",
+    "turkish": "bulmak"
+  },
+  {
+    "rank": 391,
+    "spanish": "gracias",
+    "normalized": "gracias",
+    "turkish": "tesekkurler"
+  },
+  {
+    "rank": 392,
+    "spanish": "ministerio",
+    "normalized": "ministerio",
+    "turkish": "bakanlık"
+  },
+  {
+    "rank": 393,
+    "spanish": "conjunto",
+    "normalized": "conjunto",
+    "turkish": "ayarlamak"
+  },
+  {
+    "rank": 394,
+    "spanish": "defensa",
+    "normalized": "defensa",
+    "turkish": "savunma"
+  },
+  {
+    "rank": 395,
+    "spanish": "alguien",
+    "normalized": "alguien",
+    "turkish": "birisi"
+  },
+  {
+    "rank": 396,
+    "spanish": "quedar",
+    "normalized": "quedar",
+    "turkish": "kalmak"
+  },
+  {
+    "rank": 397,
+    "spanish": "resto",
+    "normalized": "resto",
+    "turkish": "dinlenme"
+  },
+  {
+    "rank": 398,
+    "spanish": "causa",
+    "normalized": "causa",
+    "turkish": "sebep"
+  },
+  {
+    "rank": 399,
+    "spanish": "allá",
+    "normalized": "alla",
+    "turkish": "orada"
+  },
+  {
+    "rank": 400,
+    "spanish": "cuyo",
+    "normalized": "cuyo",
+    "turkish": "kimin"
+  },
+  {
+    "rank": 401,
+    "spanish": "mar",
+    "normalized": "mar",
+    "turkish": "deniz"
+  },
+  {
+    "rank": 402,
+    "spanish": "importancia",
+    "normalized": "importancia",
+    "turkish": "önem"
+  },
+  {
+    "rank": 403,
+    "spanish": "contrario",
+    "normalized": "contrario",
+    "turkish": "karşısında"
+  },
+  {
+    "rank": 404,
+    "spanish": "fuerte",
+    "normalized": "fuerte",
+    "turkish": "guclu"
+  },
+  {
+    "rank": 405,
+    "spanish": "sol",
+    "normalized": "sol",
+    "turkish": "gunes"
+  },
+  {
+    "rank": 406,
+    "spanish": "apoyo",
+    "normalized": "apoyo",
+    "turkish": "destek"
+  },
+  {
+    "rank": 407,
+    "spanish": "civil",
+    "normalized": "civil",
+    "turkish": "sivil"
+  },
+  {
+    "rank": 408,
+    "spanish": "libre",
+    "normalized": "libre",
+    "turkish": "ozgur, bos"
+  },
+  {
+    "rank": 409,
+    "spanish": "fuente",
+    "normalized": "fuente",
+    "turkish": "kaynak"
+  },
+  {
+    "rank": 410,
+    "spanish": "administración",
+    "normalized": "administracion",
+    "turkish": "yönetim"
+  },
+  {
+    "rank": 411,
+    "spanish": "común",
+    "normalized": "comun",
+    "turkish": "ortak"
+  },
+  {
+    "rank": 412,
+    "spanish": "dejar",
+    "normalized": "dejar",
+    "turkish": "ayrılmak"
+  },
+  {
+    "rank": 413,
+    "spanish": "cine",
+    "normalized": "cine",
+    "turkish": "sinema"
+  },
+  {
+    "rank": 414,
+    "spanish": "salir",
+    "normalized": "salir",
+    "turkish": "cikmak"
+  },
+  {
+    "rank": 415,
+    "spanish": "comunicación",
+    "normalized": "comunicacion",
+    "turkish": "iletişim"
+  },
+  {
+    "rank": 416,
+    "spanish": "experiencia",
+    "normalized": "experiencia",
+    "turkish": "deneyim"
+  },
+  {
+    "rank": 417,
+    "spanish": "demasiado",
+    "normalized": "demasiado",
+    "turkish": "cok fazla"
+  },
+  {
+    "rank": 418,
+    "spanish": "plan",
+    "normalized": "plan",
+    "turkish": "planı"
+  },
+  {
+    "rank": 419,
+    "spanish": "respuesta",
+    "normalized": "respuesta",
+    "turkish": "cevap"
+  },
+  {
+    "rank": 420,
+    "spanish": "energía",
+    "normalized": "energia",
+    "turkish": "enerji"
+  },
+  {
+    "rank": 421,
+    "spanish": "izquierdo",
+    "normalized": "izquierdo",
+    "turkish": "sol"
+  },
+  {
+    "rank": 422,
+    "spanish": "función",
+    "normalized": "funcion",
+    "turkish": "işlev"
+  },
+  {
+    "rank": 423,
+    "spanish": "principal",
+    "normalized": "principal",
+    "turkish": "ana"
+  },
+  {
+    "rank": 424,
+    "spanish": "superior",
+    "normalized": "superior",
+    "turkish": "üst"
+  },
+  {
+    "rank": 425,
+    "spanish": "naturaleza",
+    "normalized": "naturaleza",
+    "turkish": "doğa"
+  },
+  {
+    "rank": 426,
+    "spanish": "unión",
+    "normalized": "union",
+    "turkish": "birlik"
+  },
+  {
+    "rank": 427,
+    "spanish": "especialmente",
+    "normalized": "especialmente",
+    "turkish": "özellikle"
+  },
+  {
+    "rank": 428,
+    "spanish": "rey",
+    "normalized": "rey",
+    "turkish": "kral"
+  },
+  {
+    "rank": 429,
+    "spanish": "domingo",
+    "normalized": "domingo",
+    "turkish": "pazar"
+  },
+  {
+    "rank": 430,
+    "spanish": "favor",
+    "normalized": "favor",
+    "turkish": "lütfen"
+  },
+  {
+    "rank": 431,
+    "spanish": "cantidad",
+    "normalized": "cantidad",
+    "turkish": "miktar"
+  },
+  {
+    "rank": 432,
+    "spanish": "elección",
+    "normalized": "eleccion",
+    "turkish": "seçim"
+  },
+  {
+    "rank": 433,
+    "spanish": "clase",
+    "normalized": "clase",
+    "turkish": "sınıf"
+  },
+  {
+    "rank": 434,
+    "spanish": "producto",
+    "normalized": "producto",
+    "turkish": "ürün"
+  },
+  {
+    "rank": 435,
+    "spanish": "conocer",
+    "normalized": "conocer",
+    "turkish": "biliyorum"
+  },
+  {
+    "rank": 436,
+    "spanish": "teatro",
+    "normalized": "teatro",
+    "turkish": "tiyatro"
+  },
+  {
+    "rank": 437,
+    "spanish": "evitar",
+    "normalized": "evitar",
+    "turkish": "kaçınmak"
+  },
+  {
+    "rank": 438,
+    "spanish": "color",
+    "normalized": "color",
+    "turkish": "renk"
+  },
+  {
+    "rank": 439,
+    "spanish": "mesa",
+    "normalized": "mesa",
+    "turkish": "masa"
+  },
+  {
+    "rank": 440,
+    "spanish": "debido",
+    "normalized": "debido",
+    "turkish": "vadesi gelmiş"
+  },
+  {
+    "rank": 441,
+    "spanish": "secretario",
+    "normalized": "secretario",
+    "turkish": "sekreter"
+  },
+  {
+    "rank": 442,
+    "spanish": "objeto",
+    "normalized": "objeto",
+    "turkish": "nesne"
+  },
+  {
+    "rank": 443,
+    "spanish": "quizás",
+    "normalized": "quizas",
+    "turkish": "belki"
+  },
+  {
+    "rank": 444,
+    "spanish": "posición",
+    "normalized": "posicion",
+    "turkish": "pozisyon"
+  },
+  {
+    "rank": 445,
+    "spanish": "natural",
+    "normalized": "natural",
+    "turkish": "doğal"
+  },
+  {
+    "rank": 446,
+    "spanish": "elemento",
+    "normalized": "elemento",
+    "turkish": "eleman"
+  },
+  {
+    "rank": 447,
+    "spanish": "objetivo",
+    "normalized": "objetivo",
+    "turkish": "hedef"
+  },
+  {
+    "rank": 448,
+    "spanish": "origen",
+    "normalized": "origen",
+    "turkish": "köken"
+  },
+  {
+    "rank": 449,
+    "spanish": "blanco",
+    "normalized": "blanco",
+    "turkish": "beyaz"
+  },
+  {
+    "rank": 450,
+    "spanish": "llevar",
+    "normalized": "llevar",
+    "turkish": "taşımak"
+  },
+  {
+    "rank": 451,
+    "spanish": "opinión",
+    "normalized": "opinion",
+    "turkish": "görüş"
+  },
+  {
+    "rank": 452,
+    "spanish": "ayuda",
+    "normalized": "ayuda",
+    "turkish": "yardım"
+  },
+  {
+    "rank": 453,
+    "spanish": "oficial",
+    "normalized": "oficial",
+    "turkish": "resmi"
+  },
+  {
+    "rank": 454,
+    "spanish": "silencio",
+    "normalized": "silencio",
+    "turkish": "sessizlik"
+  },
+  {
+    "rank": 455,
+    "spanish": "pensar",
+    "normalized": "pensar",
+    "turkish": "düşünmek"
+  },
+  {
+    "rank": 456,
+    "spanish": "república",
+    "normalized": "republica",
+    "turkish": "cumhuriyet"
+  },
+  {
+    "rank": 457,
+    "spanish": "sangre",
+    "normalized": "sangre",
+    "turkish": "kan"
+  },
+  {
+    "rank": 458,
+    "spanish": "encuentro",
+    "normalized": "encuentro",
+    "turkish": "karşılaşma"
+  },
+  {
+    "rank": 459,
+    "spanish": "ni siquiera",
+    "normalized": "ni siquiera",
+    "turkish": "bile"
+  },
+  {
+    "rank": 460,
+    "spanish": "autor",
+    "normalized": "autor",
+    "turkish": "yazar"
+  },
+  {
+    "rank": 461,
+    "spanish": "reunión",
+    "normalized": "reunion",
+    "turkish": "toplantı"
+  },
+  {
+    "rank": 462,
+    "spanish": "suelo",
+    "normalized": "suelo",
+    "turkish": "zemin"
+  },
+  {
+    "rank": 463,
+    "spanish": "muestra",
+    "normalized": "muestra",
+    "turkish": "örnek"
+  },
+  {
+    "rank": 464,
+    "spanish": "viejo",
+    "normalized": "viejo",
+    "turkish": "eski"
+  },
+  {
+    "rank": 465,
+    "spanish": "encima",
+    "normalized": "encima",
+    "turkish": "yukarıda"
+  },
+  {
+    "rank": 466,
+    "spanish": "resultar",
+    "normalized": "resultar",
+    "turkish": "sonuç"
+  },
+  {
+    "rank": 467,
+    "spanish": "tomar",
+    "normalized": "tomar",
+    "turkish": "Al"
+  },
+  {
+    "rank": 468,
+    "spanish": "bastante",
+    "normalized": "bastante",
+    "turkish": "oldukça"
+  },
+  {
+    "rank": 469,
+    "spanish": "siete",
+    "normalized": "siete",
+    "turkish": "yedi"
+  },
+  {
+    "rank": 470,
+    "spanish": "lucha",
+    "normalized": "lucha",
+    "turkish": "kavga"
+  },
+  {
+    "rank": 471,
+    "spanish": "amigo",
+    "normalized": "amigo",
+    "turkish": "arkadaş"
+  },
+  {
+    "rank": 472,
+    "spanish": "línea",
+    "normalized": "linea",
+    "turkish": "çizgi"
+  },
+  {
+    "rank": 473,
+    "spanish": "sur",
+    "normalized": "sur",
+    "turkish": "güney"
+  },
+  {
+    "rank": 474,
+    "spanish": "norte",
+    "normalized": "norte",
+    "turkish": "kuzey"
+  },
+  {
+    "rank": 475,
+    "spanish": "iglesia",
+    "normalized": "iglesia",
+    "turkish": "kilise"
+  },
+  {
+    "rank": 476,
+    "spanish": "tratamiento",
+    "normalized": "tratamiento",
+    "turkish": "tedavi"
+  },
+  {
+    "rank": 477,
+    "spanish": "existencia",
+    "normalized": "existencia",
+    "turkish": "varoluş"
+  },
+  {
+    "rank": 478,
+    "spanish": "cargo",
+    "normalized": "cargo",
+    "turkish": "ücret"
+  },
+  {
+    "rank": 479,
+    "spanish": "América",
+    "normalized": "america",
+    "turkish": "Amerika"
+  },
+  {
+    "rank": 480,
+    "spanish": "boca",
+    "normalized": "boca",
+    "turkish": "ağız"
+  },
+  {
+    "rank": 481,
+    "spanish": "plaza",
+    "normalized": "plaza",
+    "turkish": "kare"
+  },
+  {
+    "rank": 482,
+    "spanish": "pie",
+    "normalized": "pie",
+    "turkish": "ayak"
+  },
+  {
+    "rank": 483,
+    "spanish": "trabajador",
+    "normalized": "trabajador",
+    "turkish": "işçi"
+  },
+  {
+    "rank": 484,
+    "spanish": "poner",
+    "normalized": "poner",
+    "turkish": "koymak"
+  },
+  {
+    "rank": 485,
+    "spanish": "venir",
+    "normalized": "venir",
+    "turkish": "gel"
+  },
+  {
+    "rank": 486,
+    "spanish": "permitir",
+    "normalized": "permitir",
+    "turkish": "izin ver"
+  },
+  {
+    "rank": 487,
+    "spanish": "análisis",
+    "normalized": "analisis",
+    "turkish": "analiz"
+  },
+  {
+    "rank": 488,
+    "spanish": "acto",
+    "normalized": "acto",
+    "turkish": "eylem"
+  },
+  {
+    "rank": 489,
+    "spanish": "radio",
+    "normalized": "radio",
+    "turkish": "radyo"
+  },
+  {
+    "rank": 490,
+    "spanish": "crecimiento",
+    "normalized": "crecimiento",
+    "turkish": "büyüme"
+  },
+  {
+    "rank": 491,
+    "spanish": "compañía",
+    "normalized": "compania",
+    "turkish": "şirket"
+  },
+  {
+    "rank": 492,
+    "spanish": "autoridad",
+    "normalized": "autoridad",
+    "turkish": "yetki"
+  },
+  {
+    "rank": 493,
+    "spanish": "realizar",
+    "normalized": "realizar",
+    "turkish": "gerçekleştirmek"
+  },
+  {
+    "rank": 494,
+    "spanish": "diario",
+    "normalized": "diario",
+    "turkish": "günlük"
+  },
+  {
+    "rank": 495,
+    "spanish": "ambiente",
+    "normalized": "ambiente",
+    "turkish": "çevre"
+  },
+  {
+    "rank": 496,
+    "spanish": "precisamente",
+    "normalized": "precisamente",
+    "turkish": "kesinlikle"
+  },
+  {
+    "rank": 497,
+    "spanish": "enfermedad",
+    "normalized": "enfermedad",
+    "turkish": "hastalık"
+  },
+  {
+    "rank": 498,
+    "spanish": "especie",
+    "normalized": "especie",
+    "turkish": "türler"
+  },
+  {
+    "rank": 499,
+    "spanish": "ejército",
+    "normalized": "ejercito",
+    "turkish": "ordu"
+  },
+  {
+    "rank": 500,
+    "spanish": "santo",
+    "normalized": "santo",
+    "turkish": "kutsal"
+  },
+  {
+    "rank": 501,
+    "spanish": "río",
+    "normalized": "rio",
+    "turkish": "nehir"
+  },
+  {
+    "rank": 502,
+    "spanish": "seguro",
+    "normalized": "seguro",
+    "turkish": "elbette"
+  },
+  {
+    "rank": 503,
+    "spanish": "esperar",
+    "normalized": "esperar",
+    "turkish": "bekle"
+  },
+  {
+    "rank": 504,
+    "spanish": "viaje",
+    "normalized": "viaje",
+    "turkish": "gezi"
+  },
+  {
+    "rank": 505,
+    "spanish": "ocho",
+    "normalized": "ocho",
+    "turkish": "sekiz"
+  },
+  {
+    "rank": 506,
+    "spanish": "vivir",
+    "normalized": "vivir",
+    "turkish": "canlı"
+  },
+  {
+    "rank": 507,
+    "spanish": "región",
+    "normalized": "region",
+    "turkish": "bölge"
+  },
+  {
+    "rank": 508,
+    "spanish": "formación",
+    "normalized": "formacion",
+    "turkish": "eğitim"
+  },
+  {
+    "rank": 509,
+    "spanish": "escuela",
+    "normalized": "escuela",
+    "turkish": "okul"
+  },
+  {
+    "rank": 510,
+    "spanish": "cuarto",
+    "normalized": "cuarto",
+    "turkish": "dördüncü"
+  },
+  {
+    "rank": 511,
+    "spanish": "participación",
+    "normalized": "participacion",
+    "turkish": "katılım"
+  },
+  {
+    "rank": 512,
+    "spanish": "éxito",
+    "normalized": "exito",
+    "turkish": "başarı"
+  },
+  {
+    "rank": 513,
+    "spanish": "artículo",
+    "normalized": "articulo",
+    "turkish": "makale"
+  },
+  {
+    "rank": 514,
+    "spanish": "metro",
+    "normalized": "metro",
+    "turkish": "metre"
+  },
+  {
+    "rank": 515,
+    "spanish": "marchar",
+    "normalized": "marchar",
+    "turkish": "mart"
+  },
+  {
+    "rank": 516,
+    "spanish": "régimen",
+    "normalized": "regimen",
+    "turkish": "rejim"
+  },
+  {
+    "rank": 517,
+    "spanish": "consecuencia",
+    "normalized": "consecuencia",
+    "turkish": "sonuç"
+  },
+  {
+    "rank": 518,
+    "spanish": "conocimiento",
+    "normalized": "conocimiento",
+    "turkish": "bilgi"
+  },
+  {
+    "rank": 519,
+    "spanish": "corazón",
+    "normalized": "corazon",
+    "turkish": "kalp"
+  },
+  {
+    "rank": 520,
+    "spanish": "campaña",
+    "normalized": "campana",
+    "turkish": "kampanya"
+  },
+  {
+    "rank": 521,
+    "spanish": "estructura",
+    "normalized": "estructura",
+    "turkish": "yapı"
+  },
+  {
+    "rank": 522,
+    "spanish": "finalmente",
+    "normalized": "finalmente",
+    "turkish": "nihayet"
+  },
+  {
+    "rank": 523,
+    "spanish": "modelo",
+    "normalized": "modelo",
+    "turkish": "modeli"
+  },
+  {
+    "rank": 524,
+    "spanish": "carta",
+    "normalized": "carta",
+    "turkish": "mektup"
+  },
+  {
+    "rank": 525,
+    "spanish": "construcción",
+    "normalized": "construccion",
+    "turkish": "inşaat"
+  },
+  {
+    "rank": 526,
+    "spanish": "médico",
+    "normalized": "medico",
+    "turkish": "doktor"
+  },
+  {
+    "rank": 527,
+    "spanish": "miedo",
+    "normalized": "miedo",
+    "turkish": "korku"
+  },
+  {
+    "rank": 528,
+    "spanish": "entrada",
+    "normalized": "entrada",
+    "turkish": "giriş"
+  },
+  {
+    "rank": 529,
+    "spanish": "humano",
+    "normalized": "humano",
+    "turkish": "insan"
+  },
+  {
+    "rank": 530,
+    "spanish": "actitud",
+    "normalized": "actitud",
+    "turkish": "tutum"
+  },
+  {
+    "rank": 531,
+    "spanish": "negro",
+    "normalized": "negro",
+    "turkish": "siyah"
+  },
+  {
+    "rank": 532,
+    "spanish": "texto",
+    "normalized": "texto",
+    "turkish": "metin"
+  },
+  {
+    "rank": 533,
+    "spanish": "mitad",
+    "normalized": "mitad",
+    "turkish": "yarım"
+  },
+  {
+    "rank": 534,
+    "spanish": "alrededor",
+    "normalized": "alrededor",
+    "turkish": "etrafında"
+  },
+  {
+    "rank": 535,
+    "spanish": "acerca",
+    "normalized": "acerca",
+    "turkish": "hakkında"
+  },
+  {
+    "rank": 536,
+    "spanish": "peso",
+    "normalized": "peso",
+    "turkish": "ağırlık"
+  },
+  {
+    "rank": 537,
+    "spanish": "pequeño",
+    "normalized": "pequeno",
+    "turkish": "küçük"
+  },
+  {
+    "rank": 538,
+    "spanish": "fecha",
+    "normalized": "fecha",
+    "turkish": "tarih"
+  },
+  {
+    "rank": 539,
+    "spanish": "doctor",
+    "normalized": "doctor",
+    "turkish": "doktor"
+  },
+  {
+    "rank": 540,
+    "spanish": "materia",
+    "normalized": "materia",
+    "turkish": "madde"
+  },
+  {
+    "rank": 541,
+    "spanish": "carrera",
+    "normalized": "carrera",
+    "turkish": "kariyer"
+  },
+  {
+    "rank": 542,
+    "spanish": "lejos",
+    "normalized": "lejos",
+    "turkish": "çok uzakta"
+  },
+  {
+    "rank": 543,
+    "spanish": "juez",
+    "normalized": "juez",
+    "turkish": "yargıç"
+  },
+  {
+    "rank": 544,
+    "spanish": "característica",
+    "normalized": "caracteristica",
+    "turkish": "özellik"
+  },
+  {
+    "rank": 545,
+    "spanish": "riesgo",
+    "normalized": "riesgo",
+    "turkish": "risk"
+  },
+  {
+    "rank": 546,
+    "spanish": "fácil",
+    "normalized": "facil",
+    "turkish": "kolay"
+  },
+  {
+    "rank": 547,
+    "spanish": "diferencia",
+    "normalized": "diferencia",
+    "turkish": "fark"
+  },
+  {
+    "rank": 548,
+    "spanish": "cultural",
+    "normalized": "cultural",
+    "turkish": "kültürel"
+  },
+  {
+    "rank": 549,
+    "spanish": "práctica",
+    "normalized": "practica",
+    "turkish": "pratik yapmak"
+  },
+  {
+    "rank": 550,
+    "spanish": "mayo",
+    "normalized": "mayo",
+    "turkish": "mayıs"
+  },
+  {
+    "rank": 551,
+    "spanish": "memoria",
+    "normalized": "memoria",
+    "turkish": "hafıza"
+  },
+  {
+    "rank": 552,
+    "spanish": "plazo",
+    "normalized": "plazo",
+    "turkish": "dönem"
+  },
+  {
+    "rank": 553,
+    "spanish": "expresión",
+    "normalized": "expresion",
+    "turkish": "ifade"
+  },
+  {
+    "rank": 554,
+    "spanish": "diciembre",
+    "normalized": "diciembre",
+    "turkish": "aralık"
+  },
+  {
+    "rank": 555,
+    "spanish": "mantener",
+    "normalized": "mantener",
+    "turkish": "tutmak"
+  },
+  {
+    "rank": 556,
+    "spanish": "enero",
+    "normalized": "enero",
+    "turkish": "ocak"
+  },
+  {
+    "rank": 557,
+    "spanish": "volver",
+    "normalized": "volver",
+    "turkish": "dönüş"
+  },
+  {
+    "rank": 558,
+    "spanish": "cuadro",
+    "normalized": "cuadro",
+    "turkish": "kutu"
+  },
+  {
+    "rank": 559,
+    "spanish": "producir",
+    "normalized": "producir",
+    "turkish": "üretmek"
+  },
+  {
+    "rank": 560,
+    "spanish": "europeo",
+    "normalized": "europeo",
+    "turkish": "Avrupalı"
+  },
+  {
+    "rank": 561,
+    "spanish": "conciencia",
+    "normalized": "conciencia",
+    "turkish": "vicdan"
+  },
+  {
+    "rank": 562,
+    "spanish": "atrás",
+    "normalized": "atras",
+    "turkish": "geri"
+  },
+  {
+    "rank": 563,
+    "spanish": "creación",
+    "normalized": "creacion",
+    "turkish": "yaratılış"
+  },
+  {
+    "rank": 564,
+    "spanish": "precio",
+    "normalized": "precio",
+    "turkish": "fiyat"
+  },
+  {
+    "rank": 565,
+    "spanish": "película",
+    "normalized": "pelicula",
+    "turkish": "film"
+  },
+  {
+    "rank": 566,
+    "spanish": "puerto",
+    "normalized": "puerto",
+    "turkish": "liman"
+  },
+  {
+    "rank": 567,
+    "spanish": "fuego",
+    "normalized": "fuego",
+    "turkish": "ateş"
+  },
+  {
+    "rank": 568,
+    "spanish": "cuestión",
+    "normalized": "cuestion",
+    "turkish": "sorun"
+  },
+  {
+    "rank": 569,
+    "spanish": "costa",
+    "normalized": "costa",
+    "turkish": "sahil"
+  },
+  {
+    "rank": 570,
+    "spanish": "supuesto",
+    "normalized": "supuesto",
+    "turkish": "kurs"
+  },
+  {
+    "rank": 571,
+    "spanish": "local",
+    "normalized": "local",
+    "turkish": "yerel"
+  },
+  {
+    "rank": 572,
+    "spanish": "aspecto",
+    "normalized": "aspecto",
+    "turkish": "görünüm"
+  },
+  {
+    "rank": 573,
+    "spanish": "sala",
+    "normalized": "sala",
+    "turkish": "oda"
+  },
+  {
+    "rank": 574,
+    "spanish": "cámara",
+    "normalized": "camara",
+    "turkish": "kamera"
+  },
+  {
+    "rank": 575,
+    "spanish": "vuelta",
+    "normalized": "vuelta",
+    "turkish": "dönüş"
+  },
+  {
+    "rank": 576,
+    "spanish": "vía",
+    "normalized": "via",
+    "turkish": "aracılığıyla"
+  },
+  {
+    "rank": 577,
+    "spanish": "mirada",
+    "normalized": "mirada",
+    "turkish": "bak"
+  },
+  {
+    "rank": 578,
+    "spanish": "informe",
+    "normalized": "informe",
+    "turkish": "rapor"
+  },
+  {
+    "rank": 579,
+    "spanish": "unidad",
+    "normalized": "unidad",
+    "turkish": "birim"
+  },
+  {
+    "rank": 580,
+    "spanish": "distinto",
+    "normalized": "distinto",
+    "turkish": "farklı"
+  },
+  {
+    "rank": 581,
+    "spanish": "suerte",
+    "normalized": "suerte",
+    "turkish": "şans"
+  },
+  {
+    "rank": 582,
+    "spanish": "mirar",
+    "normalized": "mirar",
+    "turkish": "bak"
+  },
+  {
+    "rank": 583,
+    "spanish": "llamado",
+    "normalized": "llamado",
+    "turkish": "aradı"
+  },
+  {
+    "rank": 584,
+    "spanish": "técnico",
+    "normalized": "tecnico",
+    "turkish": "teknisyen"
+  },
+  {
+    "rank": 585,
+    "spanish": "título",
+    "normalized": "titulo",
+    "turkish": "başlık"
+  },
+  {
+    "rank": 586,
+    "spanish": "octubre",
+    "normalized": "octubre",
+    "turkish": "ekim"
+  },
+  {
+    "rank": 587,
+    "spanish": "período",
+    "normalized": "periodo",
+    "turkish": "dönem"
+  },
+  {
+    "rank": 588,
+    "spanish": "democracia",
+    "normalized": "democracia",
+    "turkish": "demokrasi"
+  },
+  {
+    "rank": 589,
+    "spanish": "aumento",
+    "normalized": "aumento",
+    "turkish": "artış"
+  },
+  {
+    "rank": 590,
+    "spanish": "fútbol",
+    "normalized": "futbol",
+    "turkish": "futbol"
+  },
+  {
+    "rank": 591,
+    "spanish": "prueba",
+    "normalized": "prueba",
+    "turkish": "test"
+  },
+  {
+    "rank": 592,
+    "spanish": "consumo",
+    "normalized": "consumo",
+    "turkish": "tüketim"
+  },
+  {
+    "rank": 593,
+    "spanish": "ocasión",
+    "normalized": "ocasion",
+    "turkish": "fırsat"
+  },
+  {
+    "rank": 594,
+    "spanish": "exterior",
+    "normalized": "exterior",
+    "turkish": "dışarıda"
+  },
+  {
+    "rank": 595,
+    "spanish": "solución",
+    "normalized": "solucion",
+    "turkish": "çözüm"
+  },
+  {
+    "rank": 596,
+    "spanish": "sueño",
+    "normalized": "sueno",
+    "turkish": "rüya"
+  },
+  {
+    "rank": 597,
+    "spanish": "capaz",
+    "normalized": "capaz",
+    "turkish": "yetenekli"
+  },
+  {
+    "rank": 598,
+    "spanish": "industria",
+    "normalized": "industria",
+    "turkish": "endüstri"
+  },
+  {
+    "rank": 599,
+    "spanish": "adelante",
+    "normalized": "adelante",
+    "turkish": "ileri"
+  },
+  {
+    "rank": 600,
+    "spanish": "salida",
+    "normalized": "salida",
+    "turkish": "çıkış"
+  },
+  {
+    "rank": 601,
+    "spanish": "ciencia",
+    "normalized": "ciencia",
+    "turkish": "bilim"
+  },
+  {
+    "rank": 602,
+    "spanish": "asunto",
+    "normalized": "asunto",
+    "turkish": "madde"
+  },
+  {
+    "rank": 603,
+    "spanish": "asociación",
+    "normalized": "asociacion",
+    "turkish": "dernek"
+  },
+  {
+    "rank": 604,
+    "spanish": "oro",
+    "normalized": "oro",
+    "turkish": "altın"
+  },
+  {
+    "rank": 605,
+    "spanish": "pregunta",
+    "normalized": "pregunta",
+    "turkish": "soru"
+  },
+  {
+    "rank": 606,
+    "spanish": "oposición",
+    "normalized": "oposicion",
+    "turkish": "muhalefet"
+  },
+  {
+    "rank": 607,
+    "spanish": "entrar",
+    "normalized": "entrar",
+    "turkish": "girmek"
+  },
+  {
+    "rank": 608,
+    "spanish": "señora",
+    "normalized": "senora",
+    "turkish": "bayan"
+  },
+  {
+    "rank": 609,
+    "spanish": "señalar",
+    "normalized": "senalar",
+    "turkish": "belirtmek"
+  },
+  {
+    "rank": 610,
+    "spanish": "dolor",
+    "normalized": "dolor",
+    "turkish": "ağrı"
+  },
+  {
+    "rank": 611,
+    "spanish": "comercio",
+    "normalized": "comercio",
+    "turkish": "ticaret"
+  },
+  {
+    "rank": 612,
+    "spanish": "operación",
+    "normalized": "operacion",
+    "turkish": "operasyon"
+  },
+  {
+    "rank": 613,
+    "spanish": "tribunal",
+    "normalized": "tribunal",
+    "turkish": "mahkeme"
+  },
+  {
+    "rank": 614,
+    "spanish": "institución",
+    "normalized": "institucion",
+    "turkish": "kurum"
+  },
+  {
+    "rank": 615,
+    "spanish": "junio",
+    "normalized": "junio",
+    "turkish": "haziran"
+  },
+  {
+    "rank": 616,
+    "spanish": "contenido",
+    "normalized": "contenido",
+    "turkish": "içerik"
+  },
+  {
+    "rank": 617,
+    "spanish": "juicio",
+    "normalized": "juicio",
+    "turkish": "yargı"
+  },
+  {
+    "rank": 618,
+    "spanish": "electoral",
+    "normalized": "electoral",
+    "turkish": "seçim"
+  },
+  {
+    "rank": 619,
+    "spanish": "considerar",
+    "normalized": "considerar",
+    "turkish": "düşünmek"
+  },
+  {
+    "rank": 620,
+    "spanish": "voluntad",
+    "normalized": "voluntad",
+    "turkish": "irade"
+  },
+  {
+    "rank": 621,
+    "spanish": "recuerdo",
+    "normalized": "recuerdo",
+    "turkish": "Hatırlıyorum"
+  },
+  {
+    "rank": 622,
+    "spanish": "área",
+    "normalized": "area",
+    "turkish": "alan"
+  },
+  {
+    "rank": 623,
+    "spanish": "aparecer",
+    "normalized": "aparecer",
+    "turkish": "görünmek"
+  },
+  {
+    "rank": 624,
+    "spanish": "cama",
+    "normalized": "cama",
+    "turkish": "yatak"
+  },
+  {
+    "rank": 625,
+    "spanish": "aun",
+    "normalized": "aun",
+    "turkish": "henuz, hala"
+  },
+  {
+    "rank": 626,
+    "spanish": "presentar",
+    "normalized": "presentar",
+    "turkish": "mevcut"
+  },
+  {
+    "rank": 627,
+    "spanish": "revolución",
+    "normalized": "revolucion",
+    "turkish": "devrim"
+  },
+  {
+    "rank": 628,
+    "spanish": "buscar",
+    "normalized": "buscar",
+    "turkish": "arama"
+  },
+  {
+    "rank": 629,
+    "spanish": "abril",
+    "normalized": "abril",
+    "turkish": "Nisan"
+  },
+  {
+    "rank": 630,
+    "spanish": "fiscal",
+    "normalized": "fiscal",
+    "turkish": "savcı"
+  },
+  {
+    "rank": 631,
+    "spanish": "violencia",
+    "normalized": "violencia",
+    "turkish": "şiddet"
+  },
+  {
+    "rank": 632,
+    "spanish": "arma",
+    "normalized": "arma",
+    "turkish": "silah"
+  },
+  {
+    "rank": 633,
+    "spanish": "esfuerzo",
+    "normalized": "esfuerzo",
+    "turkish": "çaba"
+  },
+  {
+    "rank": 634,
+    "spanish": "profesional",
+    "normalized": "profesional",
+    "turkish": "profesyonel"
+  },
+  {
+    "rank": 635,
+    "spanish": "asimismo",
+    "normalized": "asimismo",
+    "turkish": "aynı şekilde"
+  },
+  {
+    "rank": 636,
+    "spanish": "grado",
+    "normalized": "grado",
+    "turkish": "derece"
+  },
+  {
+    "rank": 637,
+    "spanish": "material",
+    "normalized": "material",
+    "turkish": "malzeme"
+  },
+  {
+    "rank": 638,
+    "spanish": "carne",
+    "normalized": "carne",
+    "turkish": "et"
+  },
+  {
+    "rank": 639,
+    "spanish": "llamar",
+    "normalized": "llamar",
+    "turkish": "çağrı"
+  },
+  {
+    "rank": 640,
+    "spanish": "particular",
+    "normalized": "particular",
+    "turkish": "özel"
+  },
+  {
+    "rank": 641,
+    "spanish": "trabajar",
+    "normalized": "trabajar",
+    "turkish": "iş"
+  },
+  {
+    "rank": 642,
+    "spanish": "propuesta",
+    "normalized": "propuesta",
+    "turkish": "teklif"
+  },
+  {
+    "rank": 643,
+    "spanish": "muerto",
+    "normalized": "muerto",
+    "turkish": "ölü"
+  },
+  {
+    "rank": 644,
+    "spanish": "reforma",
+    "normalized": "reforma",
+    "turkish": "reform"
+  },
+  {
+    "rank": 645,
+    "spanish": "hermano",
+    "normalized": "hermano",
+    "turkish": "erkek kardeş"
+  },
+  {
+    "rank": 646,
+    "spanish": "corte",
+    "normalized": "corte",
+    "turkish": "kesmek"
+  },
+  {
+    "rank": 647,
+    "spanish": "comenzar",
+    "normalized": "comenzar",
+    "turkish": "başlangıç"
+  },
+  {
+    "rank": 648,
+    "spanish": "etapa",
+    "normalized": "etapa",
+    "turkish": "sahne"
+  },
+  {
+    "rank": 649,
+    "spanish": "no obstante",
+    "normalized": "no obstante",
+    "turkish": "ancak"
+  },
+  {
+    "rank": 650,
+    "spanish": "diverso",
+    "normalized": "diverso",
+    "turkish": "çeşitli"
+  },
+  {
+    "rank": 651,
+    "spanish": "visitar",
+    "normalized": "visitar",
+    "turkish": "ziyaret"
+  },
+  {
+    "rank": 652,
+    "spanish": "concepto",
+    "normalized": "concepto",
+    "turkish": "kavram"
+  },
+  {
+    "rank": 653,
+    "spanish": "paciente",
+    "normalized": "paciente",
+    "turkish": "hasta"
+  },
+  {
+    "rank": 654,
+    "spanish": "solamente",
+    "normalized": "solamente",
+    "turkish": "sadece"
+  },
+  {
+    "rank": 655,
+    "spanish": "deseo",
+    "normalized": "deseo",
+    "turkish": "dilek"
+  },
+  {
+    "rank": 656,
+    "spanish": "suficiente",
+    "normalized": "suficiente",
+    "turkish": "yeterli"
+  },
+  {
+    "rank": 657,
+    "spanish": "marzo",
+    "normalized": "marzo",
+    "turkish": "mart"
+  },
+  {
+    "rank": 658,
+    "spanish": "jamás",
+    "normalized": "jamas",
+    "turkish": "asla"
+  },
+  {
+    "rank": 659,
+    "spanish": "club",
+    "normalized": "club",
+    "turkish": "kulüp"
+  },
+  {
+    "rank": 660,
+    "spanish": "instituto",
+    "normalized": "instituto",
+    "turkish": "enstitü"
+  },
+  {
+    "rank": 661,
+    "spanish": "constitución",
+    "normalized": "constitucion",
+    "turkish": "anayasa"
+  },
+  {
+    "rank": 662,
+    "spanish": "curso",
+    "normalized": "curso",
+    "turkish": "kurs"
+  },
+  {
+    "rank": 663,
+    "spanish": "lenguaje",
+    "normalized": "lenguaje",
+    "turkish": "dil"
+  },
+  {
+    "rank": 664,
+    "spanish": "estilo",
+    "normalized": "estilo",
+    "turkish": "stil"
+  },
+  {
+    "rank": 665,
+    "spanish": "rosa",
+    "normalized": "rosa",
+    "turkish": "pembe"
+  },
+  {
+    "rank": 666,
+    "spanish": "imposible",
+    "normalized": "imposible",
+    "turkish": "imkansız"
+  },
+  {
+    "rank": 667,
+    "spanish": "peor",
+    "normalized": "peor",
+    "turkish": "daha kötü"
+  },
+  {
+    "rank": 668,
+    "spanish": "piel",
+    "normalized": "piel",
+    "turkish": "cilt"
+  },
+  {
+    "rank": 669,
+    "spanish": "arriba",
+    "normalized": "arriba",
+    "turkish": "yukarı"
+  },
+  {
+    "rank": 670,
+    "spanish": "septiembre",
+    "normalized": "septiembre",
+    "turkish": "Eylül"
+  },
+  {
+    "rank": 671,
+    "spanish": "teoría",
+    "normalized": "teoria",
+    "turkish": "teori"
+  },
+  {
+    "rank": 672,
+    "spanish": "animal",
+    "normalized": "animal",
+    "turkish": "hayvan"
+  },
+  {
+    "rank": 673,
+    "spanish": "perdido",
+    "normalized": "perdido",
+    "turkish": "kayıp"
+  },
+  {
+    "rank": 674,
+    "spanish": "conseguir",
+    "normalized": "conseguir",
+    "turkish": "almak"
+  },
+  {
+    "rank": 675,
+    "spanish": "máximo",
+    "normalized": "maximo",
+    "turkish": "maksimum"
+  },
+  {
+    "rank": 676,
+    "spanish": "noviembre",
+    "normalized": "noviembre",
+    "turkish": "Kasım"
+  },
+  {
+    "rank": 677,
+    "spanish": "líder",
+    "normalized": "lider",
+    "turkish": "lider"
+  },
+  {
+    "rank": 678,
+    "spanish": "hospital",
+    "normalized": "hospital",
+    "turkish": "hastane"
+  },
+  {
+    "rank": 679,
+    "spanish": "destino",
+    "normalized": "destino",
+    "turkish": "kader"
+  },
+  {
+    "rank": 680,
+    "spanish": "flor",
+    "normalized": "flor",
+    "turkish": "çiçek"
+  },
+  {
+    "rank": 681,
+    "spanish": "afirmar",
+    "normalized": "afirmar",
+    "turkish": "onaylamak"
+  },
+  {
+    "rank": 682,
+    "spanish": "explicar",
+    "normalized": "explicar",
+    "turkish": "açıkla"
+  },
+  {
+    "rank": 683,
+    "spanish": "término",
+    "normalized": "termino",
+    "turkish": "dönem"
+  },
+  {
+    "rank": 684,
+    "spanish": "premio",
+    "normalized": "premio",
+    "turkish": "ödül"
+  },
+  {
+    "rank": 685,
+    "spanish": "tercero",
+    "normalized": "tercero",
+    "turkish": "üçüncü"
+  },
+  {
+    "rank": 686,
+    "spanish": "simple",
+    "normalized": "simple",
+    "turkish": "basit"
+  },
+  {
+    "rank": 687,
+    "spanish": "factor",
+    "normalized": "factor",
+    "turkish": "faktör"
+  },
+  {
+    "rank": 688,
+    "spanish": "cielo",
+    "normalized": "cielo",
+    "turkish": "gökyüzü"
+  },
+  {
+    "rank": 689,
+    "spanish": "actualmente",
+    "normalized": "actualmente",
+    "turkish": "şu anda"
+  },
+  {
+    "rank": 690,
+    "spanish": "conocido",
+    "normalized": "conocido",
+    "turkish": "bilinen"
+  },
+  {
+    "rank": 691,
+    "spanish": "ejercicio",
+    "normalized": "ejercicio",
+    "turkish": "egzersiz"
+  },
+  {
+    "rank": 692,
+    "spanish": "par",
+    "normalized": "par",
+    "turkish": "çift"
+  },
+  {
+    "rank": 693,
+    "spanish": "ocurrir",
+    "normalized": "ocurrir",
+    "turkish": "meydana gelmek"
+  },
+  {
+    "rank": 694,
+    "spanish": "espíritu",
+    "normalized": "espiritu",
+    "turkish": "ruh"
+  },
+  {
+    "rank": 695,
+    "spanish": "lengua",
+    "normalized": "lengua",
+    "turkish": "dil"
+  },
+  {
+    "rank": 696,
+    "spanish": "responsabilidad",
+    "normalized": "responsabilidad",
+    "turkish": "sorumluluk"
+  },
+  {
+    "rank": 697,
+    "spanish": "distancia",
+    "normalized": "distancia",
+    "turkish": "mesafe"
+  },
+  {
+    "rank": 698,
+    "spanish": "organismo",
+    "normalized": "organismo",
+    "turkish": "organizma"
+  },
+  {
+    "rank": 699,
+    "spanish": "cruz",
+    "normalized": "cruz",
+    "turkish": "çapraz"
+  },
+  {
+    "rank": 700,
+    "spanish": "evolución",
+    "normalized": "evolucion",
+    "turkish": "evrim"
+  },
+  {
+    "rank": 701,
+    "spanish": "realmente",
+    "normalized": "realmente",
+    "turkish": "gerçekten"
+  },
+  {
+    "rank": 702,
+    "spanish": "francés",
+    "normalized": "frances",
+    "turkish": "fransız"
+  },
+  {
+    "rank": 703,
+    "spanish": "novela",
+    "normalized": "novela",
+    "turkish": "roman"
+  },
+  {
+    "rank": 704,
+    "spanish": "doble",
+    "normalized": "doble",
+    "turkish": "çift"
+  },
+  {
+    "rank": 705,
+    "spanish": "obtener",
+    "normalized": "obtener",
+    "turkish": "almak"
+  },
+  {
+    "rank": 706,
+    "spanish": "selección",
+    "normalized": "seleccion",
+    "turkish": "seçim"
+  },
+  {
+    "rank": 707,
+    "spanish": "nación",
+    "normalized": "nacion",
+    "turkish": "ulus"
+  },
+  {
+    "rank": 708,
+    "spanish": "crear",
+    "normalized": "crear",
+    "turkish": "yarat"
+  },
+  {
+    "rank": 709,
+    "spanish": "motivo",
+    "normalized": "motivo",
+    "turkish": "sebep"
+  },
+  {
+    "rank": 710,
+    "spanish": "detrás de",
+    "normalized": "detras de",
+    "turkish": "arkasında"
+  },
+  {
+    "rank": 711,
+    "spanish": "significar",
+    "normalized": "significar",
+    "turkish": "demek"
+  },
+  {
+    "rank": 712,
+    "spanish": "empleo",
+    "normalized": "empleo",
+    "turkish": "istihdam"
+  },
+  {
+    "rank": 713,
+    "spanish": "escrito",
+    "normalized": "escrito",
+    "turkish": "yazılı"
+  },
+  {
+    "rank": 714,
+    "spanish": "departamento",
+    "normalized": "departamento",
+    "turkish": "departman"
+  },
+  {
+    "rank": 715,
+    "spanish": "contacto",
+    "normalized": "contacto",
+    "turkish": "iletişim"
+  },
+  {
+    "rank": 716,
+    "spanish": "red",
+    "normalized": "red",
+    "turkish": "ağ"
+  },
+  {
+    "rank": 717,
+    "spanish": "rostro",
+    "normalized": "rostro",
+    "turkish": "yüz"
+  },
+  {
+    "rank": 718,
+    "spanish": "oportunidad",
+    "normalized": "oportunidad",
+    "turkish": "fırsat"
+  },
+  {
+    "rank": 719,
+    "spanish": "terreno",
+    "normalized": "terreno",
+    "turkish": "arazi"
+  },
+  {
+    "rank": 720,
+    "spanish": "lista",
+    "normalized": "lista",
+    "turkish": "liste"
+  },
+  {
+    "rank": 721,
+    "spanish": "acceso",
+    "normalized": "acceso",
+    "turkish": "erişim"
+  },
+  {
+    "rank": 722,
+    "spanish": "visión",
+    "normalized": "vision",
+    "turkish": "vizyon"
+  },
+  {
+    "rank": 723,
+    "spanish": "preguntar",
+    "normalized": "preguntar",
+    "turkish": "sor"
+  },
+  {
+    "rank": 724,
+    "spanish": "grave",
+    "normalized": "grave",
+    "turkish": "ciddi"
+  },
+  {
+    "rank": 725,
+    "spanish": "lunes",
+    "normalized": "lunes",
+    "turkish": "pazartesi"
+  },
+  {
+    "rank": 726,
+    "spanish": "aplicación",
+    "normalized": "aplicacion",
+    "turkish": "uygulama"
+  },
+  {
+    "rank": 727,
+    "spanish": "junta",
+    "normalized": "junta",
+    "turkish": "tahta"
+  },
+  {
+    "rank": 728,
+    "spanish": "verano",
+    "normalized": "verano",
+    "turkish": "yaz"
+  },
+  {
+    "rank": 729,
+    "spanish": "capítulo",
+    "normalized": "capitulo",
+    "turkish": "bölüm"
+  },
+  {
+    "rank": 730,
+    "spanish": "pensamiento",
+    "normalized": "pensamiento",
+    "turkish": "düşünce"
+  },
+  {
+    "rank": 731,
+    "spanish": "frecuencia",
+    "normalized": "frecuencia",
+    "turkish": "frekans"
+  },
+  {
+    "rank": 732,
+    "spanish": "gestión",
+    "normalized": "gestion",
+    "turkish": "yönetim"
+  },
+  {
+    "rank": 733,
+    "spanish": "viernes",
+    "normalized": "viernes",
+    "turkish": "cuma"
+  },
+  {
+    "rank": 734,
+    "spanish": "sitio",
+    "normalized": "sitio",
+    "turkish": "site"
+  },
+  {
+    "rank": 735,
+    "spanish": "agosto",
+    "normalized": "agosto",
+    "turkish": "Ağustos"
+  },
+  {
+    "rank": 736,
+    "spanish": "propiedad",
+    "normalized": "propiedad",
+    "turkish": "mülk"
+  },
+  {
+    "rank": 737,
+    "spanish": "gustar",
+    "normalized": "gustar",
+    "turkish": "beğen"
+  },
+  {
+    "rank": 738,
+    "spanish": "alcalde",
+    "normalized": "alcalde",
+    "turkish": "belediye başkanı"
+  },
+  {
+    "rank": 739,
+    "spanish": "ejecutivo",
+    "normalized": "ejecutivo",
+    "turkish": "yönetici"
+  },
+  {
+    "rank": 740,
+    "spanish": "ciudadano",
+    "normalized": "ciudadano",
+    "turkish": "vatandaş"
+  },
+  {
+    "rank": 741,
+    "spanish": "exposición",
+    "normalized": "exposicion",
+    "turkish": "sergi"
+  },
+  {
+    "rank": 742,
+    "spanish": "veinte",
+    "normalized": "veinte",
+    "turkish": "yirmi"
+  },
+  {
+    "rank": 743,
+    "spanish": "altura",
+    "normalized": "altura",
+    "turkish": "yükseklik"
+  },
+  {
+    "rank": 744,
+    "spanish": "presión",
+    "normalized": "presion",
+    "turkish": "basınç"
+  },
+  {
+    "rank": 745,
+    "spanish": "moral",
+    "normalized": "moral",
+    "turkish": "ahlak"
+  },
+  {
+    "rank": 746,
+    "spanish": "lograr",
+    "normalized": "lograr",
+    "turkish": "başarmak"
+  },
+  {
+    "rank": 747,
+    "spanish": "comité",
+    "normalized": "comite",
+    "turkish": "komite"
+  },
+  {
+    "rank": 748,
+    "spanish": "teléfono",
+    "normalized": "telefono",
+    "turkish": "telefon"
+  },
+  {
+    "rank": 749,
+    "spanish": "peligro",
+    "normalized": "peligro",
+    "turkish": "tehlike"
+  },
+  {
+    "rank": 750,
+    "spanish": "gusto",
+    "normalized": "gusto",
+    "turkish": "tat"
+  },
+  {
+    "rank": 751,
+    "spanish": "palacio",
+    "normalized": "palacio",
+    "turkish": "Saray"
+  },
+  {
+    "rank": 752,
+    "spanish": "hotel",
+    "normalized": "hotel",
+    "turkish": "otel"
+  },
+  {
+    "rank": 753,
+    "spanish": "asegurar",
+    "normalized": "asegurar",
+    "turkish": "sağlamak"
+  },
+  {
+    "rank": 754,
+    "spanish": "isla",
+    "normalized": "isla",
+    "turkish": "ada"
+  },
+  {
+    "rank": 755,
+    "spanish": "guardia",
+    "normalized": "guardia",
+    "turkish": "muhafız"
+  },
+  {
+    "rank": 756,
+    "spanish": "confianza",
+    "normalized": "confianza",
+    "turkish": "güven"
+  },
+  {
+    "rank": 757,
+    "spanish": "café",
+    "normalized": "cafe",
+    "turkish": "kahve"
+  },
+  {
+    "rank": 758,
+    "spanish": "demanda",
+    "normalized": "demanda",
+    "turkish": "talep"
+  },
+  {
+    "rank": 759,
+    "spanish": "personaje",
+    "normalized": "personaje",
+    "turkish": "karakter"
+  },
+  {
+    "rank": 760,
+    "spanish": "directamente",
+    "normalized": "directamente",
+    "turkish": "doğrudan"
+  },
+  {
+    "rank": 761,
+    "spanish": "discurso",
+    "normalized": "discurso",
+    "turkish": "konuşma"
+  },
+  {
+    "rank": 762,
+    "spanish": "representante",
+    "normalized": "representante",
+    "turkish": "temsilci"
+  },
+  {
+    "rank": 763,
+    "spanish": "normal",
+    "normalized": "normal",
+    "turkish": "normal"
+  },
+  {
+    "rank": 764,
+    "spanish": "pena",
+    "normalized": "pena",
+    "turkish": "üzüntü"
+  },
+  {
+    "rank": 765,
+    "spanish": "jugador",
+    "normalized": "jugador",
+    "turkish": "oyuncu"
+  },
+  {
+    "rank": 766,
+    "spanish": "suponer",
+    "normalized": "suponer",
+    "turkish": "varsayalım"
+  },
+  {
+    "rank": 767,
+    "spanish": "industrial",
+    "normalized": "industrial",
+    "turkish": "endüstriyel"
+  },
+  {
+    "rank": 768,
+    "spanish": "referencia",
+    "normalized": "referencia",
+    "turkish": "referans"
+  },
+  {
+    "rank": 769,
+    "spanish": "febrero",
+    "normalized": "febrero",
+    "turkish": "şubat"
+  },
+  {
+    "rank": 770,
+    "spanish": "entender",
+    "normalized": "entender",
+    "turkish": "anlamak"
+  },
+  {
+    "rank": 771,
+    "spanish": "física",
+    "normalized": "fisica",
+    "turkish": "fizik"
+  },
+  {
+    "rank": 772,
+    "spanish": "alimento",
+    "normalized": "alimento",
+    "turkish": "yiyecek"
+  },
+  {
+    "rank": 773,
+    "spanish": "protección",
+    "normalized": "proteccion",
+    "turkish": "koruma"
+  },
+  {
+    "rank": 774,
+    "spanish": "marido",
+    "normalized": "marido",
+    "turkish": "koca"
+  },
+  {
+    "rank": 775,
+    "spanish": "llamada",
+    "normalized": "llamada",
+    "turkish": "çağrı"
+  },
+  {
+    "rank": 776,
+    "spanish": "brazo",
+    "normalized": "brazo",
+    "turkish": "kol"
+  },
+  {
+    "rank": 777,
+    "spanish": "intervención",
+    "normalized": "intervencion",
+    "turkish": "müdahale"
+  },
+  {
+    "rank": 778,
+    "spanish": "sal",
+    "normalized": "sal",
+    "turkish": "tuz"
+  },
+  {
+    "rank": 779,
+    "spanish": "página",
+    "normalized": "pagina",
+    "turkish": "sayfa"
+  },
+  {
+    "rank": 780,
+    "spanish": "nueve",
+    "normalized": "nueve",
+    "turkish": "dokuz"
+  },
+  {
+    "rank": 781,
+    "spanish": "temporada",
+    "normalized": "temporada",
+    "turkish": "sezon"
+  },
+  {
+    "rank": 782,
+    "spanish": "abajo",
+    "normalized": "abajo",
+    "turkish": "aşağı"
+  },
+  {
+    "rank": 783,
+    "spanish": "maestro",
+    "normalized": "maestro",
+    "turkish": "öğretmen"
+  },
+  {
+    "rank": 784,
+    "spanish": "esposa",
+    "normalized": "esposa",
+    "turkish": "eş"
+  },
+  {
+    "rank": 785,
+    "spanish": "crítica",
+    "normalized": "critica",
+    "turkish": "eleştiri"
+  },
+  {
+    "rank": 786,
+    "spanish": "totalmente",
+    "normalized": "totalmente",
+    "turkish": "tamamen"
+  },
+  {
+    "rank": 787,
+    "spanish": "perder",
+    "normalized": "perder",
+    "turkish": "kaybetmek"
+  },
+  {
+    "rank": 788,
+    "spanish": "venta",
+    "normalized": "venta",
+    "turkish": "satış"
+  },
+  {
+    "rank": 789,
+    "spanish": "contar",
+    "normalized": "contar",
+    "turkish": "saymak"
+  },
+  {
+    "rank": 790,
+    "spanish": "familiar",
+    "normalized": "familiar",
+    "turkish": "aile"
+  },
+  {
+    "rank": 791,
+    "spanish": "kilómetro",
+    "normalized": "kilometro",
+    "turkish": "kilometre"
+  },
+  {
+    "rank": 792,
+    "spanish": "fundamental",
+    "normalized": "fundamental",
+    "turkish": "temel"
+  },
+  {
+    "rank": 793,
+    "spanish": "enorme",
+    "normalized": "enorme",
+    "turkish": "devasa"
+  },
+  {
+    "rank": 794,
+    "spanish": "ofrecer",
+    "normalized": "ofrecer",
+    "turkish": "teklif"
+  },
+  {
+    "rank": 795,
+    "spanish": "comercial",
+    "normalized": "comercial",
+    "turkish": "ticari"
+  },
+  {
+    "rank": 796,
+    "spanish": "pan",
+    "normalized": "pan",
+    "turkish": "ekmek"
+  },
+  {
+    "rank": 797,
+    "spanish": "profesor",
+    "normalized": "profesor",
+    "turkish": "öğretmen"
+  },
+  {
+    "rank": 798,
+    "spanish": "inversión",
+    "normalized": "inversion",
+    "turkish": "yatırım"
+  },
+  {
+    "rank": 799,
+    "spanish": "municipal",
+    "normalized": "municipal",
+    "turkish": "belediye"
+  },
+  {
+    "rank": 800,
+    "spanish": "declaración",
+    "normalized": "declaracion",
+    "turkish": "beyan"
+  },
+  {
+    "rank": 801,
+    "spanish": "funcionario",
+    "normalized": "funcionario",
+    "turkish": "resmi"
+  },
+  {
+    "rank": 802,
+    "spanish": "responsable",
+    "normalized": "responsable",
+    "turkish": "sorumlu"
+  },
+  {
+    "rank": 803,
+    "spanish": "sábado",
+    "normalized": "sabado",
+    "turkish": "cumartesi"
+  },
+  {
+    "rank": 804,
+    "spanish": "federal",
+    "normalized": "federal",
+    "turkish": "federal"
+  },
+  {
+    "rank": 805,
+    "spanish": "conflicto",
+    "normalized": "conflicto",
+    "turkish": "çatışma"
+  },
+  {
+    "rank": 806,
+    "spanish": "dirigente",
+    "normalized": "dirigente",
+    "turkish": "lider"
+  },
+  {
+    "rank": 807,
+    "spanish": "cambiar",
+    "normalized": "cambiar",
+    "turkish": "değişiklik"
+  },
+  {
+    "rank": 808,
+    "spanish": "superficie",
+    "normalized": "superficie",
+    "turkish": "yüzey"
+  },
+  {
+    "rank": 809,
+    "spanish": "necesitar",
+    "normalized": "necesitar",
+    "turkish": "ihtiyaç"
+  },
+  {
+    "rank": 810,
+    "spanish": "estudiante",
+    "normalized": "estudiante",
+    "turkish": "öğrenci"
+  },
+  {
+    "rank": 811,
+    "spanish": "golpe",
+    "normalized": "golpe",
+    "turkish": "darbe"
+  },
+  {
+    "rank": 812,
+    "spanish": "literatura",
+    "normalized": "literatura",
+    "turkish": "edebiyat"
+  },
+  {
+    "rank": 813,
+    "spanish": "circunstancia",
+    "normalized": "circunstancia",
+    "turkish": "durum"
+  },
+  {
+    "rank": 814,
+    "spanish": "documento",
+    "normalized": "documento",
+    "turkish": "belge"
+  },
+  {
+    "rank": 815,
+    "spanish": "fiesta",
+    "normalized": "fiesta",
+    "turkish": "parti"
+  },
+  {
+    "rank": 816,
+    "spanish": "simplemente",
+    "normalized": "simplemente",
+    "turkish": "basitçe"
+  },
+  {
+    "rank": 817,
+    "spanish": "aceite",
+    "normalized": "aceite",
+    "turkish": "yağ"
+  },
+  {
+    "rank": 818,
+    "spanish": "establecer",
+    "normalized": "establecer",
+    "turkish": "kurmak"
+  },
+  {
+    "rank": 819,
+    "spanish": "empezar",
+    "normalized": "empezar",
+    "turkish": "başlangıç"
+  },
+  {
+    "rank": 820,
+    "spanish": "pobre",
+    "normalized": "pobre",
+    "turkish": "fakir"
+  },
+  {
+    "rank": 821,
+    "spanish": "parlamento",
+    "normalized": "parlamento",
+    "turkish": "parlamento"
+  },
+  {
+    "rank": 822,
+    "spanish": "territorio",
+    "normalized": "territorio",
+    "turkish": "bölge"
+  },
+  {
+    "rank": 823,
+    "spanish": "treinta",
+    "normalized": "treinta",
+    "turkish": "otuz"
+  },
+  {
+    "rank": 824,
+    "spanish": "coche",
+    "normalized": "coche",
+    "turkish": "araba"
+  },
+  {
+    "rank": 825,
+    "spanish": "diálogo",
+    "normalized": "dialogo",
+    "turkish": "diyalog"
+  },
+  {
+    "rank": 826,
+    "spanish": "tratado",
+    "normalized": "tratado",
+    "turkish": "anlaşma"
+  },
+  {
+    "rank": 827,
+    "spanish": "revista",
+    "normalized": "revista",
+    "turkish": "dergi"
+  },
+  {
+    "rank": 828,
+    "spanish": "copa",
+    "normalized": "copa",
+    "turkish": "fincan"
+  },
+  {
+    "rank": 829,
+    "spanish": "pintura",
+    "normalized": "pintura",
+    "turkish": "boyama"
+  },
+  {
+    "rank": 830,
+    "spanish": "propósito",
+    "normalized": "proposito",
+    "turkish": "amaç"
+  },
+  {
+    "rank": 831,
+    "spanish": "leche",
+    "normalized": "leche",
+    "turkish": "süt"
+  },
+  {
+    "rank": 832,
+    "spanish": "actualidad",
+    "normalized": "actualidad",
+    "turkish": "güncel olaylar"
+  },
+  {
+    "rank": 833,
+    "spanish": "constituir",
+    "normalized": "constituir",
+    "turkish": "oluşturmak"
+  },
+  {
+    "rank": 834,
+    "spanish": "tarea",
+    "normalized": "tarea",
+    "turkish": "görev"
+  },
+  {
+    "rank": 835,
+    "spanish": "alcanzar",
+    "normalized": "alcanzar",
+    "turkish": "ulaşmak"
+  },
+  {
+    "rank": 836,
+    "spanish": "competencia",
+    "normalized": "competencia",
+    "turkish": "rekabet"
+  },
+  {
+    "rank": 837,
+    "spanish": "norma",
+    "normalized": "norma",
+    "turkish": "norm"
+  },
+  {
+    "rank": 838,
+    "spanish": "plata",
+    "normalized": "plata",
+    "turkish": "gümüş"
+  },
+  {
+    "rank": 839,
+    "spanish": "vecino",
+    "normalized": "vecino",
+    "turkish": "komşu"
+  },
+  {
+    "rank": 840,
+    "spanish": "fenómeno",
+    "normalized": "fenomeno",
+    "turkish": "fenomen"
+  },
+  {
+    "rank": 841,
+    "spanish": "intención",
+    "normalized": "intencion",
+    "turkish": "niyet"
+  },
+  {
+    "rank": 842,
+    "spanish": "diputado",
+    "normalized": "diputado",
+    "turkish": "vekil"
+  },
+  {
+    "rank": 843,
+    "spanish": "judicial",
+    "normalized": "judicial",
+    "turkish": "adli"
+  },
+  {
+    "rank": 844,
+    "spanish": "fe",
+    "normalized": "fe",
+    "turkish": "inanç"
+  },
+  {
+    "rank": 845,
+    "spanish": "jornada",
+    "normalized": "jornada",
+    "turkish": "gün"
+  },
+  {
+    "rank": 846,
+    "spanish": "ganar",
+    "normalized": "ganar",
+    "turkish": "kazanmak"
+  },
+  {
+    "rank": 847,
+    "spanish": "candidato",
+    "normalized": "candidato",
+    "turkish": "aday"
+  },
+  {
+    "rank": 848,
+    "spanish": "calor",
+    "normalized": "calor",
+    "turkish": "ısı"
+  },
+  {
+    "rank": 849,
+    "spanish": "esperanza",
+    "normalized": "esperanza",
+    "turkish": "umut"
+  },
+  {
+    "rank": 850,
+    "spanish": "recién",
+    "normalized": "recien",
+    "turkish": "yeni"
+  },
+  {
+    "rank": 851,
+    "spanish": "soler",
+    "normalized": "soler",
+    "turkish": "lehim"
+  },
+  {
+    "rank": 852,
+    "spanish": "ritmo",
+    "normalized": "ritmo",
+    "turkish": "ritim"
+  },
+  {
+    "rank": 853,
+    "spanish": "sensación",
+    "normalized": "sensacion",
+    "turkish": "duygu"
+  },
+  {
+    "rank": 854,
+    "spanish": "representación",
+    "normalized": "representacion",
+    "turkish": "temsil"
+  },
+  {
+    "rank": 855,
+    "spanish": "presidencia",
+    "normalized": "presidencia",
+    "turkish": "başkanlık"
+  },
+  {
+    "rank": 856,
+    "spanish": "triunfo",
+    "normalized": "triunfo",
+    "turkish": "zafer"
+  },
+  {
+    "rank": 857,
+    "spanish": "ayuntamiento",
+    "normalized": "ayuntamiento",
+    "turkish": "belediye binası"
+  },
+  {
+    "rank": 858,
+    "spanish": "planta",
+    "normalized": "planta",
+    "turkish": "bitki"
+  },
+  {
+    "rank": 859,
+    "spanish": "frío",
+    "normalized": "frio",
+    "turkish": "soğuk"
+  },
+  {
+    "rank": 860,
+    "spanish": "tono",
+    "normalized": "tono",
+    "turkish": "ton"
+  },
+  {
+    "rank": 861,
+    "spanish": "compañero",
+    "normalized": "companero",
+    "turkish": "arkadaş"
+  },
+  {
+    "rank": 862,
+    "spanish": "delante",
+    "normalized": "delante",
+    "turkish": "ön"
+  },
+  {
+    "rank": 863,
+    "spanish": "plano",
+    "normalized": "plano",
+    "turkish": "uçak"
+  },
+  {
+    "rank": 864,
+    "spanish": "edificio",
+    "normalized": "edificio",
+    "turkish": "bina"
+  },
+  {
+    "rank": 865,
+    "spanish": "nota",
+    "normalized": "nota",
+    "turkish": "not"
+  },
+  {
+    "rank": 866,
+    "spanish": "jugar",
+    "normalized": "jugar",
+    "turkish": "oynamak"
+  },
+  {
+    "rank": 867,
+    "spanish": "representar",
+    "normalized": "representar",
+    "turkish": "temsil etmek"
+  },
+  {
+    "rank": 868,
+    "spanish": "gesto",
+    "normalized": "gesto",
+    "turkish": "jest"
+  },
+  {
+    "rank": 869,
+    "spanish": "mensaje",
+    "normalized": "mensaje",
+    "turkish": "mesaj"
+  },
+  {
+    "rank": 870,
+    "spanish": "influencia",
+    "normalized": "influencia",
+    "turkish": "etki"
+  },
+  {
+    "rank": 871,
+    "spanish": "realizado",
+    "normalized": "realizado",
+    "turkish": "yapılmış"
+  },
+  {
+    "rank": 872,
+    "spanish": "conducta",
+    "normalized": "conducta",
+    "turkish": "davranış"
+  },
+  {
+    "rank": 873,
+    "spanish": "tamaño",
+    "normalized": "tamano",
+    "turkish": "boyut"
+  },
+  {
+    "rank": 874,
+    "spanish": "provincia",
+    "normalized": "provincia",
+    "turkish": "eyalet"
+  },
+  {
+    "rank": 875,
+    "spanish": "verde",
+    "normalized": "verde",
+    "turkish": "yeşil"
+  },
+  {
+    "rank": 876,
+    "spanish": "informar",
+    "normalized": "informar",
+    "turkish": "bilgilendirmek"
+  },
+  {
+    "rank": 877,
+    "spanish": "escribir",
+    "normalized": "escribir",
+    "turkish": "yazmak"
+  },
+  {
+    "rank": 878,
+    "spanish": "cumplir",
+    "normalized": "cumplir",
+    "turkish": "yerine getirmek"
+  },
+  {
+    "rank": 879,
+    "spanish": "pedir",
+    "normalized": "pedir",
+    "turkish": "sor"
+  },
+  {
+    "rank": 880,
+    "spanish": "alumno",
+    "normalized": "alumno",
+    "turkish": "öğrenci"
+  },
+  {
+    "rank": 881,
+    "spanish": "ámbito",
+    "normalized": "ambito",
+    "turkish": "kapsam"
+  },
+  {
+    "rank": 882,
+    "spanish": "referir",
+    "normalized": "referir",
+    "turkish": "başvurmak"
+  },
+  {
+    "rank": 883,
+    "spanish": "comer",
+    "normalized": "comer",
+    "turkish": "yemek"
+  },
+  {
+    "rank": 884,
+    "spanish": "versión",
+    "normalized": "version",
+    "turkish": "versiyon"
+  },
+  {
+    "rank": 885,
+    "spanish": "abierto",
+    "normalized": "abierto",
+    "turkish": "açık"
+  },
+  {
+    "rank": 886,
+    "spanish": "debate",
+    "normalized": "debate",
+    "turkish": "tartışma"
+  },
+  {
+    "rank": 887,
+    "spanish": "barrio",
+    "normalized": "barrio",
+    "turkish": "mahalle"
+  },
+  {
+    "rank": 888,
+    "spanish": "labor",
+    "normalized": "labor",
+    "turkish": "emek"
+  },
+  {
+    "rank": 889,
+    "spanish": "justo",
+    "normalized": "justo",
+    "turkish": "adil"
+  },
+  {
+    "rank": 890,
+    "spanish": "tradición",
+    "normalized": "tradicion",
+    "turkish": "gelenek"
+  },
+  {
+    "rank": 891,
+    "spanish": "tecnología",
+    "normalized": "tecnologia",
+    "turkish": "teknoloji"
+  },
+  {
+    "rank": 892,
+    "spanish": "fase",
+    "normalized": "fase",
+    "turkish": "aşama"
+  },
+  {
+    "rank": 893,
+    "spanish": "histórico",
+    "normalized": "historico",
+    "turkish": "tarihi"
+  },
+  {
+    "rank": 894,
+    "spanish": "agente",
+    "normalized": "agente",
+    "turkish": "ajan"
+  },
+  {
+    "rank": 895,
+    "spanish": "actuación",
+    "normalized": "actuacion",
+    "turkish": "performans"
+  },
+  {
+    "rank": 896,
+    "spanish": "león",
+    "normalized": "leon",
+    "turkish": "aslan"
+  },
+  {
+    "rank": 897,
+    "spanish": "mamá",
+    "normalized": "mama",
+    "turkish": "anne"
+  },
+  {
+    "rank": 898,
+    "spanish": "velocidad",
+    "normalized": "velocidad",
+    "turkish": "hız"
+  },
+  {
+    "rank": 899,
+    "spanish": "caber",
+    "normalized": "caber",
+    "turkish": "uygun"
+  },
+  {
+    "rank": 900,
+    "spanish": "asamblea",
+    "normalized": "asamblea",
+    "turkish": "montaj"
+  },
+  {
+    "rank": 901,
+    "spanish": "museo",
+    "normalized": "museo",
+    "turkish": "müze"
+  },
+  {
+    "rank": 902,
+    "spanish": "conferencia",
+    "normalized": "conferencia",
+    "turkish": "konferans"
+  },
+  {
+    "rank": 903,
+    "spanish": "prácticamente",
+    "normalized": "practicamente",
+    "turkish": "pratik olarak"
+  },
+  {
+    "rank": 904,
+    "spanish": "sujeto",
+    "normalized": "sujeto",
+    "turkish": "konu"
+  },
+  {
+    "rank": 905,
+    "spanish": "pérdida",
+    "normalized": "perdida",
+    "turkish": "kayıp"
+  },
+  {
+    "rank": 906,
+    "spanish": "dificultad",
+    "normalized": "dificultad",
+    "turkish": "zorluk"
+  },
+  {
+    "rank": 907,
+    "spanish": "rato",
+    "normalized": "rato",
+    "turkish": "süre"
+  },
+  {
+    "rank": 908,
+    "spanish": "pagar",
+    "normalized": "pagar",
+    "turkish": "ödemek"
+  },
+  {
+    "rank": 909,
+    "spanish": "colegio",
+    "normalized": "colegio",
+    "turkish": "okul"
+  },
+  {
+    "rank": 910,
+    "spanish": "audiencia",
+    "normalized": "audiencia",
+    "turkish": "seyirci"
+  },
+  {
+    "rank": 911,
+    "spanish": "doce",
+    "normalized": "doce",
+    "turkish": "on iki"
+  },
+  {
+    "rank": 912,
+    "spanish": "periódico",
+    "normalized": "periodico",
+    "turkish": "gazete"
+  },
+  {
+    "rank": 913,
+    "spanish": "distribución",
+    "normalized": "distribucion",
+    "turkish": "dağıtım"
+  },
+  {
+    "rank": 914,
+    "spanish": "ausencia",
+    "normalized": "ausencia",
+    "turkish": "devamsızlık"
+  },
+  {
+    "rank": 915,
+    "spanish": "entrevista",
+    "normalized": "entrevista",
+    "turkish": "röportaj"
+  },
+  {
+    "rank": 916,
+    "spanish": "recibir",
+    "normalized": "recibir",
+    "turkish": "almak"
+  },
+  {
+    "rank": 917,
+    "spanish": "añadir",
+    "normalized": "anadir",
+    "turkish": "ekle"
+  },
+  {
+    "rank": 918,
+    "spanish": "cocina",
+    "normalized": "cocina",
+    "turkish": "mutfak"
+  },
+  {
+    "rank": 919,
+    "spanish": "edición",
+    "normalized": "edicion",
+    "turkish": "baskı"
+  },
+  {
+    "rank": 920,
+    "spanish": "corresponder",
+    "normalized": "corresponder",
+    "turkish": "karşılık gelmek"
+  },
+  {
+    "rank": 921,
+    "spanish": "decidir",
+    "normalized": "decidir",
+    "turkish": "karar vermek"
+  },
+  {
+    "rank": 922,
+    "spanish": "llegada",
+    "normalized": "llegada",
+    "turkish": "varış"
+  },
+  {
+    "rank": 923,
+    "spanish": "tendencia",
+    "normalized": "tendencia",
+    "turkish": "eğilim"
+  },
+  {
+    "rank": 924,
+    "spanish": "escenario",
+    "normalized": "escenario",
+    "turkish": "sahne"
+  },
+  {
+    "rank": 925,
+    "spanish": "definitivo",
+    "normalized": "definitivo",
+    "turkish": "kesin"
+  },
+  {
+    "rank": 926,
+    "spanish": "indicar",
+    "normalized": "indicar",
+    "turkish": "belirtmek"
+  },
+  {
+    "rank": 927,
+    "spanish": "noticia",
+    "normalized": "noticia",
+    "turkish": "haberler"
+  },
+  {
+    "rank": 928,
+    "spanish": "inglés",
+    "normalized": "ingles",
+    "turkish": "İngilizce"
+  },
+  {
+    "rank": 929,
+    "spanish": "reina",
+    "normalized": "reina",
+    "turkish": "kraliçe"
+  },
+  {
+    "rank": 930,
+    "spanish": "madera",
+    "normalized": "madera",
+    "turkish": "ahşap"
+  },
+  {
+    "rank": 931,
+    "spanish": "habitante",
+    "normalized": "habitante",
+    "turkish": "bölge sakini"
+  },
+  {
+    "rank": 932,
+    "spanish": "salvo",
+    "normalized": "salvo",
+    "turkish": "kaydedildi"
+  },
+  {
+    "rank": 933,
+    "spanish": "escritor",
+    "normalized": "escritor",
+    "turkish": "yazar"
+  },
+  {
+    "rank": 934,
+    "spanish": "cuidado",
+    "normalized": "cuidado",
+    "turkish": "bakım"
+  },
+  {
+    "rank": 935,
+    "spanish": "identidad",
+    "normalized": "identidad",
+    "turkish": "kimlik"
+  },
+  {
+    "rank": 936,
+    "spanish": "pareja",
+    "normalized": "pareja",
+    "turkish": "çift"
+  },
+  {
+    "rank": 937,
+    "spanish": "evidente",
+    "normalized": "evidente",
+    "turkish": "apaçık"
+  },
+  {
+    "rank": 938,
+    "spanish": "cadena",
+    "normalized": "cadena",
+    "turkish": "zincir"
+  },
+  {
+    "rank": 939,
+    "spanish": "acabar",
+    "normalized": "acabar",
+    "turkish": "bitirmek"
+  },
+  {
+    "rank": 940,
+    "spanish": "consistir",
+    "normalized": "consistir",
+    "turkish": "oluşur"
+  },
+  {
+    "rank": 941,
+    "spanish": "presentación",
+    "normalized": "presentacion",
+    "turkish": "sunum"
+  },
+  {
+    "rank": 942,
+    "spanish": "azul",
+    "normalized": "azul",
+    "turkish": "mavi"
+  },
+  {
+    "rank": 943,
+    "spanish": "década",
+    "normalized": "decada",
+    "turkish": "on yıl"
+  },
+  {
+    "rank": 944,
+    "spanish": "comida",
+    "normalized": "comida",
+    "turkish": "yiyecek"
+  },
+  {
+    "rank": 945,
+    "spanish": "inmediato",
+    "normalized": "inmediato",
+    "turkish": "acil"
+  },
+  {
+    "rank": 946,
+    "spanish": "marca",
+    "normalized": "marca",
+    "turkish": "marka"
+  },
+  {
+    "rank": 947,
+    "spanish": "antiguo",
+    "normalized": "antiguo",
+    "turkish": "eski"
+  },
+  {
+    "rank": 948,
+    "spanish": "rojo",
+    "normalized": "rojo",
+    "turkish": "kırmızı"
+  },
+  {
+    "rank": 949,
+    "spanish": "instante",
+    "normalized": "instante",
+    "turkish": "anlık"
+  },
+  {
+    "rank": 950,
+    "spanish": "iniciativa",
+    "normalized": "iniciativa",
+    "turkish": "girişim"
+  },
+  {
+    "rank": 951,
+    "spanish": "caer",
+    "normalized": "caer",
+    "turkish": "düşmek"
+  },
+  {
+    "rank": 952,
+    "spanish": "luna",
+    "normalized": "luna",
+    "turkish": "ay"
+  },
+  {
+    "rank": 953,
+    "spanish": "verdadero",
+    "normalized": "verdadero",
+    "turkish": "doğru"
+  },
+  {
+    "rank": 954,
+    "spanish": "habitación",
+    "normalized": "habitacion",
+    "turkish": "oda"
+  },
+  {
+    "rank": 955,
+    "spanish": "manifestar",
+    "normalized": "manifestar",
+    "turkish": "açık"
+  },
+  {
+    "rank": 956,
+    "spanish": "tío",
+    "normalized": "tio",
+    "turkish": "amca"
+  },
+  {
+    "rank": 957,
+    "spanish": "martes",
+    "normalized": "martes",
+    "turkish": "salı"
+  },
+  {
+    "rank": 958,
+    "spanish": "pleno",
+    "normalized": "pleno",
+    "turkish": "dolu"
+  },
+  {
+    "rank": 959,
+    "spanish": "declarar",
+    "normalized": "declarar",
+    "turkish": "ilan etmek"
+  },
+  {
+    "rank": 960,
+    "spanish": "mínimo",
+    "normalized": "minimo",
+    "turkish": "minimum"
+  },
+  {
+    "rank": 961,
+    "spanish": "aparición",
+    "normalized": "aparicion",
+    "turkish": "görünüm"
+  },
+  {
+    "rank": 962,
+    "spanish": "transporte",
+    "normalized": "transporte",
+    "turkish": "ulaşım"
+  },
+  {
+    "rank": 963,
+    "spanish": "pretender",
+    "normalized": "pretender",
+    "turkish": "rol yapmak"
+  },
+  {
+    "rank": 964,
+    "spanish": "sede",
+    "normalized": "sede",
+    "turkish": "karargah"
+  },
+  {
+    "rank": 965,
+    "spanish": "comportamiento",
+    "normalized": "comportamiento",
+    "turkish": "davranış"
+  },
+  {
+    "rank": 966,
+    "spanish": "periodista",
+    "normalized": "periodista",
+    "turkish": "gazeteci"
+  },
+  {
+    "rank": 967,
+    "spanish": "convertido",
+    "normalized": "convertido",
+    "turkish": "dönüştürülmüş"
+  },
+  {
+    "rank": 968,
+    "spanish": "rico",
+    "normalized": "rico",
+    "turkish": "zengin"
+  },
+  {
+    "rank": 969,
+    "spanish": "anunciar",
+    "normalized": "anunciar",
+    "turkish": "duyurmak"
+  },
+  {
+    "rank": 970,
+    "spanish": "presupuesto",
+    "normalized": "presupuesto",
+    "turkish": "bütçe"
+  },
+  {
+    "rank": 971,
+    "spanish": "estrategia",
+    "normalized": "estrategia",
+    "turkish": "strateji"
+  },
+  {
+    "rank": 972,
+    "spanish": "utilizar",
+    "normalized": "utilizar",
+    "turkish": "kullanmak"
+  },
+  {
+    "rank": 973,
+    "spanish": "compromiso",
+    "normalized": "compromiso",
+    "turkish": "taahhüt"
+  },
+  {
+    "rank": 974,
+    "spanish": "acaso",
+    "normalized": "acaso",
+    "turkish": "belki"
+  },
+  {
+    "rank": 975,
+    "spanish": "completo",
+    "normalized": "completo",
+    "turkish": "tamamlandı"
+  },
+  {
+    "rank": 976,
+    "spanish": "pelo",
+    "normalized": "pelo",
+    "turkish": "saç"
+  },
+  {
+    "rank": 977,
+    "spanish": "piedra",
+    "normalized": "piedra",
+    "turkish": "taş"
+  },
+  {
+    "rank": 978,
+    "spanish": "medicina",
+    "normalized": "medicina",
+    "turkish": "tıp"
+  },
+  {
+    "rank": 979,
+    "spanish": "liga",
+    "normalized": "liga",
+    "turkish": "lig"
+  },
+  {
+    "rank": 980,
+    "spanish": "disposición",
+    "normalized": "disposicion",
+    "turkish": "eğilim"
+  },
+  {
+    "rank": 981,
+    "spanish": "permanente",
+    "normalized": "permanente",
+    "turkish": "kalıcı"
+  },
+  {
+    "rank": 982,
+    "spanish": "método",
+    "normalized": "metodo",
+    "turkish": "yöntem"
+  },
+  {
+    "rank": 983,
+    "spanish": "error",
+    "normalized": "error",
+    "turkish": "hata"
+  },
+  {
+    "rank": 984,
+    "spanish": "incremento",
+    "normalized": "incremento",
+    "turkish": "artış"
+  },
+  {
+    "rank": 985,
+    "spanish": "piso",
+    "normalized": "piso",
+    "turkish": "kat"
+  },
+  {
+    "rank": 986,
+    "spanish": "similar",
+    "normalized": "similar",
+    "turkish": "benzer"
+  },
+  {
+    "rank": 987,
+    "spanish": "viento",
+    "normalized": "viento",
+    "turkish": "rüzgar"
+  },
+  {
+    "rank": 988,
+    "spanish": "posteriormente",
+    "normalized": "posteriormente",
+    "turkish": "daha sonra"
+  },
+  {
+    "rank": 989,
+    "spanish": "dispuesto",
+    "normalized": "dispuesto",
+    "turkish": "istekli"
+  },
+  {
+    "rank": 990,
+    "spanish": "poeta",
+    "normalized": "poeta",
+    "turkish": "şair"
+  },
+  {
+    "rank": 991,
+    "spanish": "secreto",
+    "normalized": "secreto",
+    "turkish": "gizli"
+  },
+  {
+    "rank": 992,
+    "spanish": "funcionamiento",
+    "normalized": "funcionamiento",
+    "turkish": "operasyon"
+  },
+  {
+    "rank": 993,
+    "spanish": "debajo",
+    "normalized": "debajo",
+    "turkish": "aşağıda"
+  },
+  {
+    "rank": 994,
+    "spanish": "recordar",
+    "normalized": "recordar",
+    "turkish": "hatırla"
+  },
+  {
+    "rank": 995,
+    "spanish": "jueves",
+    "normalized": "jueves",
+    "turkish": "perşembe"
+  },
+  {
+    "rank": 996,
+    "spanish": "corriente",
+    "normalized": "corriente",
+    "turkish": "akım"
+  },
+  {
+    "rank": 997,
+    "spanish": "ingresos",
+    "normalized": "ingresos",
+    "turkish": "gelir"
+  },
+  {
+    "rank": 998,
+    "spanish": "intento",
+    "normalized": "intento",
+    "turkish": "denemek"
+  },
+  {
+    "rank": 999,
+    "spanish": "hoja",
+    "normalized": "hoja",
+    "turkish": "yaprak"
+  },
+  {
+    "rank": 1000,
+    "spanish": "hola",
+    "normalized": "hola",
+    "turkish": "merhaba"
+  }
+]
