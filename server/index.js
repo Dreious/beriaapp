@@ -2,9 +2,11 @@ const http = require('http');
 const crypto = require('crypto');
 const cors = require('cors');
 const express = require('express');
+const { Pool } = require('pg');
 const { Server } = require('socket.io');
 
 const PORT = process.env.PORT || 4000;
+const DATABASE_URL = process.env.DATABASE_URL;
 
 const users = [
   {
@@ -30,6 +32,15 @@ const userStatuses = new Map();
 const pushTokensByUserId = new Map();
 const lastPushNotificationByUserId = new Map();
 const MESSAGE_NOTIFICATION_COOLDOWN_MS = 30 * 60 * 1000;
+const dbPool = DATABASE_URL
+  ? new Pool({
+      connectionString: DATABASE_URL,
+      ssl:
+        process.env.NODE_ENV === 'production' && !DATABASE_URL.includes('localhost')
+          ? { rejectUnauthorized: false }
+          : false,
+    })
+  : null;
 
 const app = express();
 const server = http.createServer(app);
@@ -145,6 +156,73 @@ function shouldNotifyUser(userId) {
 
   const lastNotificationAt = lastPushNotificationByUserId.get(userId) || 0;
   return Date.now() - lastNotificationAt >= MESSAGE_NOTIFICATION_COOLDOWN_MS;
+}
+
+function rowToMessage(row) {
+  return {
+    id: row.id,
+    text: row.text,
+    createdAt: row.created_at instanceof Date ? row.created_at.toISOString() : row.created_at,
+    sender: row.sender,
+    readBy: row.read_by || [],
+    location: row.location,
+  };
+}
+
+async function initDatabase() {
+  if (!dbPool) {
+    console.log('DATABASE_URL yok; mesajlar RAM uzerinde gecici tutulacak.');
+    return;
+  }
+
+  await dbPool.query(`
+    CREATE TABLE IF NOT EXISTS chat_messages (
+      id TEXT PRIMARY KEY,
+      text TEXT NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL,
+      sender JSONB NOT NULL,
+      read_by JSONB NOT NULL DEFAULT '[]'::jsonb,
+      location JSONB
+    )
+  `);
+
+  const result = await dbPool.query(
+    'SELECT id, text, created_at, sender, read_by, location FROM chat_messages ORDER BY created_at ASC',
+  );
+  messages.splice(0, messages.length, ...result.rows.map(rowToMessage));
+  console.log(`Postgres hazir; ${messages.length} mesaj yuklendi.`);
+}
+
+async function saveMessage(message) {
+  if (!dbPool) {
+    return;
+  }
+
+  await dbPool.query(
+    `
+      INSERT INTO chat_messages (id, text, created_at, sender, read_by, location)
+      VALUES ($1, $2, $3, $4::jsonb, $5::jsonb, $6::jsonb)
+    `,
+    [
+      message.id,
+      message.text,
+      message.createdAt,
+      JSON.stringify(message.sender),
+      JSON.stringify(message.readBy || []),
+      message.location ? JSON.stringify(message.location) : null,
+    ],
+  );
+}
+
+async function updateMessageReadBy(message) {
+  if (!dbPool) {
+    return;
+  }
+
+  await dbPool.query(
+    'UPDATE chat_messages SET read_by = $2::jsonb WHERE id = $1',
+    [message.id, JSON.stringify(message.readBy || [])],
+  );
 }
 
 
@@ -335,7 +413,7 @@ io.on('connection', (socket) => {
     io.to('admins').emit('user-status-updated', status);
   });
 
-  socket.on('send-message', (payload, ack) => {
+  socket.on('send-message', async (payload, ack) => {
     const text = String(payload?.text || '').trim();
     const location = getValidLocation(payload?.location);
 
@@ -353,20 +431,25 @@ io.on('connection', (socket) => {
       location: socket.user.role === 'user' && location ? location : null,
     };
 
-    messages.push(message);
-    io.to('study-chat').emit('message', message);
+    try {
+      await saveMessage(message);
+      messages.push(message);
+      io.to('study-chat').emit('message', message);
 
-    const recipients = users.filter((user) => user.id !== socket.user.id);
-    for (const recipient of recipients) {
-      if (!shouldNotifyUser(recipient.id)) {
-        continue;
+      const recipients = users.filter((user) => user.id !== socket.user.id);
+      for (const recipient of recipients) {
+        if (!shouldNotifyUser(recipient.id)) {
+          continue;
+        }
+
+        lastPushNotificationByUserId.set(recipient.id, Date.now());
+        sendExpoPushNotifications(getPushTokensForUser(recipient.id), message);
       }
 
-      lastPushNotificationByUserId.set(recipient.id, Date.now());
-      sendExpoPushNotifications(getPushTokensForUser(recipient.id), message);
+      ack?.({ ok: true });
+    } catch (error) {
+      ack?.({ ok: false, message: 'Mesaj kaydedilemedi.' });
     }
-
-    ack?.({ ok: true });
   });
 
   socket.on('typing', (payload) => {
@@ -376,9 +459,10 @@ io.on('connection', (socket) => {
     });
   });
 
-  socket.on('mark-read', (payload) => {
+  socket.on('mark-read', async (payload) => {
     const messageIds = Array.isArray(payload?.messageIds) ? payload.messageIds : [];
     const updatedIds = [];
+    const updatedMessages = [];
 
     for (const message of messages) {
       message.readBy = message.readBy || [];
@@ -390,10 +474,17 @@ io.on('connection', (socket) => {
       ) {
         message.readBy.push(socket.user.id);
         updatedIds.push(message.id);
+        updatedMessages.push(message);
       }
     }
 
     if (updatedIds.length > 0) {
+      try {
+        await Promise.all(updatedMessages.map(updateMessageReadBy));
+      } catch (error) {
+        // Okundu bilgisi yazilamazsa canli chat akisini bozma.
+      }
+
       io.to('study-chat').emit('messages-read', {
         messageIds: updatedIds,
         readerId: socket.user.id,
@@ -402,6 +493,13 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
-});
+initDatabase()
+  .then(() => {
+    server.listen(PORT, '0.0.0.0', () => {
+      console.log(`Server running on http://0.0.0.0:${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error('Database baslatilamadi:', error);
+    process.exit(1);
+  });
