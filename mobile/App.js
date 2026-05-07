@@ -2052,11 +2052,19 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
           style={[styles.photoButton, isUploadingPhoto && styles.primaryButtonDisabled]}
           onPress={pickAndSendPhoto}
         >
-          <Text style={styles.photoButtonText}>{isUploadingPhoto ? '...' : '+'}</Text>
+          <Text style={styles.photoButtonText}>{isUploadingPhoto ? '...' : 'Foto'}</Text>
         </Pressable>
         <TextInput
+          autoCapitalize="sentences"
+          autoCorrect={false}
+          blurOnSubmit={false}
+          enablesReturnKeyAutomatically
+          inputMode="text"
+          keyboardType="default"
+          returnKeyType="send"
           value={text}
           onChangeText={handleTextChange}
+          onSubmitEditing={sendMessage}
           placeholder="Mesaj yaz"
           placeholderTextColor="#8b93a7"
           style={styles.messageInput}
@@ -3576,8 +3584,9 @@ const styles = StyleSheet.create({
     borderTopColor: '#e5e7eb',
     borderTopWidth: 1,
     flexDirection: 'row',
-    gap: 10,
-    padding: 12,
+    gap: 8,
+    paddingHorizontal: 10,
+    paddingVertical: 12,
   },
   messageInput: {
     backgroundColor: '#f5f7fb',
@@ -3586,8 +3595,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     color: '#111827',
     flex: 1,
+    flexShrink: 1,
     fontSize: 15,
     minHeight: 46,
+    minWidth: 0,
     paddingHorizontal: 12,
   },
   photoButton: {
@@ -3598,13 +3609,13 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     height: 46,
     justifyContent: 'center',
-    width: 46,
+    flexShrink: 0,
+    width: 58,
   },
   photoButtonText: {
     color: '#ffffff',
-    fontSize: 26,
+    fontSize: 13,
     fontWeight: '900',
-    lineHeight: 28,
   },
   sendButton: {
     alignItems: 'center',
@@ -3612,6 +3623,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     minHeight: 46,
     justifyContent: 'center',
+    flexShrink: 0,
     paddingHorizontal: 14,
   },
   sendButtonText: {
