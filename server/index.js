@@ -1,12 +1,17 @@
 const http = require('http');
 const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const express = require('express');
+const multer = require('multer');
 const { Pool } = require('pg');
 const { Server } = require('socket.io');
 
 const PORT = process.env.PORT || 4000;
 const DATABASE_URL = process.env.DATABASE_URL;
+const UPLOAD_TTL_MS = 60 * 60 * 1000;
+const UPLOAD_DIR = path.join(__dirname, '..', 'uploads');
 
 const users = [
   {
@@ -52,8 +57,27 @@ const io = new Server(server, {
   },
 });
 
+fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static(UPLOAD_DIR));
+
+const upload = multer({
+  limits: {
+    fileSize: 8 * 1024 * 1024,
+  },
+  storage: multer.diskStorage({
+    destination: (req, file, cb) => cb(null, UPLOAD_DIR),
+    filename: (req, file, cb) => {
+      const ext = path.extname(file.originalname || '').toLowerCase() || '.jpg';
+      cb(null, `${crypto.randomUUID()}${ext}`);
+    },
+  }),
+  fileFilter: (req, file, cb) => {
+    cb(null, /^image\/(jpeg|jpg|png|webp|gif)$/.test(file.mimetype));
+  },
+});
 
 function publicUser(user) {
   return {
@@ -108,6 +132,40 @@ function getValidLocation(rawLocation) {
       Number.isFinite(Number(rawLocation.accuracy)) ? Number(rawLocation.accuracy) : null,
     updatedAt: new Date().toISOString(),
   };
+}
+
+function getPublicBaseUrl(req) {
+  const forwardedProto = req.headers['x-forwarded-proto'];
+  const protocol = Array.isArray(forwardedProto) ? forwardedProto[0] : forwardedProto || req.protocol;
+  return `${protocol}://${req.get('host')}`;
+}
+
+function scheduleAttachmentDeletion(filename, delay = UPLOAD_TTL_MS) {
+  setTimeout(() => {
+    fs.promises.unlink(path.join(UPLOAD_DIR, filename)).catch(() => null);
+  }, delay).unref?.();
+}
+
+async function cleanupExpiredUploads() {
+  try {
+    const files = await fs.promises.readdir(UPLOAD_DIR);
+    const now = Date.now();
+
+    await Promise.all(files.map(async (filename) => {
+      const filePath = path.join(UPLOAD_DIR, filename);
+      const stat = await fs.promises.stat(filePath);
+      const age = now - stat.mtimeMs;
+
+      if (age >= UPLOAD_TTL_MS) {
+        await fs.promises.unlink(filePath).catch(() => null);
+        return;
+      }
+
+      scheduleAttachmentDeletion(filename, UPLOAD_TTL_MS - age);
+    }));
+  } catch (error) {
+    // Upload klasoru okunamazsa server akisini bozma.
+  }
 }
 
 function isValidExpoPushToken(token) {
@@ -167,6 +225,7 @@ function rowToMessage(row) {
     sender: row.sender,
     readBy: row.read_by || [],
     location: row.location,
+    attachment: row.attachment,
   };
 }
 
@@ -183,9 +242,12 @@ async function initDatabase() {
       created_at TIMESTAMPTZ NOT NULL,
       sender JSONB NOT NULL,
       read_by JSONB NOT NULL DEFAULT '[]'::jsonb,
-      location JSONB
+      location JSONB,
+      attachment JSONB
     )
   `);
+
+  await dbPool.query('ALTER TABLE chat_messages ADD COLUMN IF NOT EXISTS attachment JSONB');
 
   await dbPool.query(`
     CREATE TABLE IF NOT EXISTS user_settings (
@@ -196,7 +258,7 @@ async function initDatabase() {
   `);
 
   const result = await dbPool.query(
-    'SELECT id, text, created_at, sender, read_by, location FROM chat_messages ORDER BY created_at ASC',
+    'SELECT id, text, created_at, sender, read_by, location, attachment FROM chat_messages ORDER BY created_at ASC',
   );
   messages.splice(0, messages.length, ...result.rows.map(rowToMessage));
 
@@ -219,8 +281,8 @@ async function saveMessage(message) {
 
   await dbPool.query(
     `
-      INSERT INTO chat_messages (id, text, created_at, sender, read_by, location)
-      VALUES ($1, $2, $3, $4::jsonb, $5::jsonb, $6::jsonb)
+      INSERT INTO chat_messages (id, text, created_at, sender, read_by, location, attachment)
+      VALUES ($1, $2, $3, $4::jsonb, $5::jsonb, $6::jsonb, $7::jsonb)
     `,
     [
       message.id,
@@ -229,6 +291,7 @@ async function saveMessage(message) {
       JSON.stringify(message.sender),
       JSON.stringify(message.readBy || []),
       message.location ? JSON.stringify(message.location) : null,
+      message.attachment ? JSON.stringify(message.attachment) : null,
     ],
   );
 }
@@ -361,6 +424,26 @@ app.post('/push-token', requireAuth, (req, res) => {
   res.json({ ok: true });
 });
 
+app.post('/attachments', requireAuth, upload.single('photo'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ message: 'Fotoğraf yuklenemedi.' });
+  }
+
+  const expiresAt = new Date(Date.now() + UPLOAD_TTL_MS).toISOString();
+  scheduleAttachmentDeletion(req.file.filename);
+
+  res.json({
+    attachment: {
+      expiresAt,
+      filename: req.file.filename,
+      mimeType: req.file.mimetype,
+      originalName: req.file.originalname,
+      type: 'image',
+      url: `${getPublicBaseUrl(req)}/uploads/${req.file.filename}`,
+    },
+  });
+});
+
 app.get('/locations', requireAuth, (req, res) => {
   if (req.user.role !== 'admin') {
     return res.status(403).json({ message: 'Sadece admin gorebilir.' });
@@ -485,19 +568,28 @@ io.on('connection', (socket) => {
   socket.on('send-message', async (payload, ack) => {
     const text = String(payload?.text || '').trim();
     const location = getValidLocation(payload?.location);
+    const attachment = payload?.attachment?.type === 'image' && payload.attachment.url
+      ? {
+          expiresAt: String(payload.attachment.expiresAt || ''),
+          mimeType: String(payload.attachment.mimeType || 'image/jpeg'),
+          type: 'image',
+          url: String(payload.attachment.url),
+        }
+      : null;
 
-    if (!text) {
+    if (!text && !attachment) {
       ack?.({ ok: false, message: 'Mesaj bos olamaz.' });
       return;
     }
 
     const message = {
       id: crypto.randomUUID(),
-      text: text.slice(0, 1000),
+      text: text ? text.slice(0, 1000) : 'Fotoğraf',
       createdAt: new Date().toISOString(),
       sender: publicUser(socket.user),
       readBy: [socket.user.id],
       location: socket.user.role === 'user' && location ? location : null,
+      attachment,
     };
 
     try {
@@ -564,6 +656,7 @@ io.on('connection', (socket) => {
 
 initDatabase()
   .then(() => {
+    cleanupExpiredUploads();
     server.listen(PORT, '0.0.0.0', () => {
       console.log(`Server running on http://0.0.0.0:${PORT}`);
     });

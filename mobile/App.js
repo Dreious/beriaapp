@@ -1,5 +1,6 @@
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as ImagePicker from 'expo-image-picker';
 import * as Notifications from 'expo-notifications';
 import { StatusBar } from 'expo-status-bar';
 import { Accelerometer } from 'expo-sensors';
@@ -18,6 +19,7 @@ import {
   AppState,
   Easing,
   FlatList,
+  Image,
   KeyboardAvoidingView,
   Linking,
   Platform,
@@ -1717,6 +1719,7 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
   const [messages, setMessages] = useState([]);
   const [text, setText] = useState('');
   const [connected, setConnected] = useState(false);
+  const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
   const [typingUsers, setTypingUsers] = useState([]);
   const [chatUserStatus, setChatUserStatus] = useState(null);
   const socketRef = useRef(null);
@@ -1906,6 +1909,71 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
     setText('');
   }
 
+  async function pickAndSendPhoto() {
+    if (!socketRef.current || isUploadingPhoto) {
+      return;
+    }
+
+    try {
+      const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+
+      if (permission.status !== 'granted') {
+        Alert.alert('Izin gerekli', 'Fotoğraf gonderebilmek icin galeri izni gerekiyor.');
+        return;
+      }
+
+      const result = await ImagePicker.launchImageLibraryAsync({
+        allowsEditing: false,
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        quality: 0.82,
+      });
+
+      if (result.canceled || !result.assets?.[0]) {
+        return;
+      }
+
+      setIsUploadingPhoto(true);
+      const asset = result.assets[0];
+      const extension = (asset.uri.split('.').pop() || 'jpg').split('?')[0];
+      const mimeType = asset.mimeType || `image/${extension === 'jpg' ? 'jpeg' : extension}`;
+      const formData = new FormData();
+
+      if (Platform.OS === 'web' && asset.file) {
+        formData.append('photo', asset.file);
+      } else {
+        formData.append('photo', {
+          uri: asset.uri,
+          name: `chat-photo.${extension}`,
+          type: mimeType,
+        });
+      }
+
+      const response = await fetch(`${apiBaseUrl}/attachments`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${session.token}`,
+        },
+        body: formData,
+      });
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Fotoğraf yuklenemedi.');
+      }
+
+      socketRef.current.emit('typing', { isTyping: false });
+      socketRef.current.emit('send-message', { attachment: data.attachment }, (result) => {
+        if (!result?.ok) {
+          Alert.alert('Fotoğraf gonderilemedi', result?.message || 'Tekrar dene.');
+        }
+      });
+    } catch (error) {
+      Alert.alert('Fotoğraf gonderilemedi', error.message || 'Tekrar dene.');
+    } finally {
+      setIsUploadingPhoto(false);
+    }
+  }
+
   if (!faceGuard.canEnterChat) {
     return (
       <View style={styles.guardNotice}>
@@ -1955,7 +2023,13 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
                 {item.sender.displayName} · {formatTime(item.createdAt)}
                 {mine ? ` ${readByOther ? '✓✓' : '✓'}` : ''}
               </Text>
-              <Text style={styles.messageText}>{item.text}</Text>
+              {item.attachment?.type === 'image' ? (
+                <Pressable onPress={() => Linking.openURL(item.attachment.url)}>
+                  <Image source={{ uri: item.attachment.url }} style={styles.messageImage} />
+                  <Text style={styles.attachmentMeta}>1 saat sonra silinir</Text>
+                </Pressable>
+              ) : null}
+              {item.text ? <Text style={styles.messageText}>{item.text}</Text> : null}
               {item.location && session.user.role === 'admin' ? (
                 <Pressable
                   style={styles.locationLink}
@@ -1973,6 +2047,13 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
       />
 
       <View style={styles.composer}>
+        <Pressable
+          disabled={isUploadingPhoto}
+          style={[styles.photoButton, isUploadingPhoto && styles.primaryButtonDisabled]}
+          onPress={pickAndSendPhoto}
+        >
+          <Text style={styles.photoButtonText}>{isUploadingPhoto ? '...' : '+'}</Text>
+        </Pressable>
         <TextInput
           value={text}
           onChangeText={handleTextChange}
@@ -3393,6 +3474,19 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 21,
   },
+  messageImage: {
+    backgroundColor: '#eef2f7',
+    borderRadius: 8,
+    height: 180,
+    marginBottom: 8,
+    width: 220,
+  },
+  attachmentMeta: {
+    color: '#667085',
+    fontSize: 11,
+    fontWeight: '800',
+    marginBottom: 6,
+  },
   locationLink: {
     backgroundColor: '#eef8f5',
     borderColor: '#b7e1d5',
@@ -3495,6 +3589,22 @@ const styles = StyleSheet.create({
     fontSize: 15,
     minHeight: 46,
     paddingHorizontal: 12,
+  },
+  photoButton: {
+    alignItems: 'center',
+    backgroundColor: '#1cb0f6',
+    borderBottomColor: '#168ac0',
+    borderBottomWidth: 4,
+    borderRadius: 12,
+    height: 46,
+    justifyContent: 'center',
+    width: 46,
+  },
+  photoButtonText: {
+    color: '#ffffff',
+    fontSize: 26,
+    fontWeight: '900',
+    lineHeight: 28,
   },
   sendButton: {
     alignItems: 'center',

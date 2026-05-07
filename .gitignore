@@ -1,5 +1,7 @@
 node_modules/
 *.log
 .env
+uploads/
+07042016_1116am_570695e0a7eec.pdf
 
 mobile/.git-local-backup/

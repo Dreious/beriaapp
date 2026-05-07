@@ -16,6 +16,7 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "Chat icin kameraya erisim gerekiyor.",
+        "NSPhotoLibraryUsageDescription": "Chatte fotoğraf gonderebilmek icin galeriye erisim gerekiyor.",
         "ITSAppUsesNonExemptEncryption": false
       },
       "bundleIdentifier": "com.beross.mobile"
@@ -54,6 +55,12 @@
         }
       ],
       "expo-asset",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Chatte fotoğraf gonderebilmek icin galeriye erisim gerekiyor."
+        }
+      ],
       "expo-notifications"
     ],
     "extra": {
