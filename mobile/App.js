@@ -1,6 +1,5 @@
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as ImagePicker from 'expo-image-picker';
 import * as Notifications from 'expo-notifications';
 import { StatusBar } from 'expo-status-bar';
 import { Accelerometer } from 'expo-sensors';
@@ -190,6 +189,14 @@ async function saveUserSettingsAsync(apiBaseUrl, session, settings) {
   }
 
   return data.settings || {};
+}
+
+function getImagePickerModule() {
+  try {
+    return require('expo-image-picker');
+  } catch (error) {
+    return null;
+  }
 }
 
 export default function App() {
@@ -1915,6 +1922,16 @@ function ChatScreen({ apiBaseUrl, faceScanEnabled, navigation, session, onMotion
     }
 
     try {
+      const ImagePicker = getImagePickerModule();
+
+      if (!ImagePicker) {
+        Alert.alert(
+          'Yeni build gerekli',
+          'Fotoğraf gonderebilmek icin uygulamanin yeni iOS development build ile kurulmasi gerekiyor.',
+        );
+        return;
+      }
+
       const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
 
       if (permission.status !== 'granted') {
