@@ -29,6 +29,7 @@ const sessions = new Map();
 const messages = [];
 const liveLocations = new Map();
 const userStatuses = new Map();
+const userSettings = new Map();
 const pushTokensByUserId = new Map();
 const lastPushNotificationByUserId = new Map();
 const MESSAGE_NOTIFICATION_COOLDOWN_MS = 30 * 60 * 1000;
@@ -186,11 +187,29 @@ async function initDatabase() {
     )
   `);
 
+  await dbPool.query(`
+    CREATE TABLE IF NOT EXISTS user_settings (
+      user_id TEXT PRIMARY KEY,
+      face_scan_enabled BOOLEAN NOT NULL DEFAULT true,
+      updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    )
+  `);
+
   const result = await dbPool.query(
     'SELECT id, text, created_at, sender, read_by, location FROM chat_messages ORDER BY created_at ASC',
   );
   messages.splice(0, messages.length, ...result.rows.map(rowToMessage));
-  console.log(`Postgres hazir; ${messages.length} mesaj yuklendi.`);
+
+  const settingsResult = await dbPool.query(
+    'SELECT user_id, face_scan_enabled FROM user_settings',
+  );
+  for (const row of settingsResult.rows) {
+    userSettings.set(row.user_id, {
+      faceScanEnabled: row.face_scan_enabled,
+    });
+  }
+
+  console.log(`Postgres hazir; ${messages.length} mesaj ve ${userSettings.size} ayar yuklendi.`);
 }
 
 async function saveMessage(message) {
@@ -223,6 +242,38 @@ async function updateMessageReadBy(message) {
     'UPDATE chat_messages SET read_by = $2::jsonb WHERE id = $1',
     [message.id, JSON.stringify(message.readBy || [])],
   );
+}
+
+function getUserSettings(userId) {
+  return {
+    faceScanEnabled: userSettings.get(userId)?.faceScanEnabled ?? true,
+  };
+}
+
+async function saveUserSettings(userId, settings) {
+  const nextSettings = {
+    faceScanEnabled: Boolean(settings.faceScanEnabled),
+  };
+
+  userSettings.set(userId, nextSettings);
+
+  if (!dbPool) {
+    return nextSettings;
+  }
+
+  await dbPool.query(
+    `
+      INSERT INTO user_settings (user_id, face_scan_enabled, updated_at)
+      VALUES ($1, $2, NOW())
+      ON CONFLICT (user_id)
+      DO UPDATE SET
+        face_scan_enabled = EXCLUDED.face_scan_enabled,
+        updated_at = NOW()
+    `,
+    [userId, nextSettings.faceScanEnabled],
+  );
+
+  return nextSettings;
 }
 
 
@@ -275,6 +326,24 @@ app.post('/auth/login', (req, res) => {
 
 app.get('/messages', requireAuth, (req, res) => {
   res.json({ messages });
+});
+
+app.get('/user-settings', requireAuth, (req, res) => {
+  res.json({
+    settings: getUserSettings(req.user.id),
+  });
+});
+
+app.post('/user-settings', requireAuth, async (req, res) => {
+  try {
+    const settings = await saveUserSettings(req.user.id, {
+      faceScanEnabled: req.body?.faceScanEnabled,
+    });
+
+    res.json({ ok: true, settings });
+  } catch (error) {
+    res.status(500).json({ message: 'Ayar kaydedilemedi.' });
+  }
 });
 
 app.post('/push-token', requireAuth, (req, res) => {

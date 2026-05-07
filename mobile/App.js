@@ -32,6 +32,8 @@ import {
 
 const COURSE_PDF = require('./assets/spanish-full-course.pdf');
 const STORY_PDF = require('./assets/spanish-short-stories.pdf');
+const COURSE_MIN_PAGE = 1;
+const COURSE_MAX_PAGE = 350;
 const STORY_MIN_PAGE = 300;
 const STORY_MAX_PAGE = 1500;
 const FACE_DETECTION_FPS = 2;
@@ -105,6 +107,10 @@ function normalizeWord(value) {
     .trim();
 }
 
+function getRandomPage(minPage, maxPage) {
+  return Math.floor(Math.random() * (maxPage - minPage + 1)) + minPage;
+}
+
 async function cancelStudyRemindersAsync() {
   if (Platform.OS === 'web') {
     return;
@@ -148,6 +154,39 @@ async function registerForMessageNotificationsAsync(apiBaseUrl, session) {
   });
 }
 
+async function fetchUserSettingsAsync(apiBaseUrl, session) {
+  const response = await fetch(`${apiBaseUrl}/user-settings`, {
+    headers: {
+      Authorization: `Bearer ${session.token}`,
+    },
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || 'Ayarlar alinamadi.');
+  }
+
+  return data.settings || {};
+}
+
+async function saveUserSettingsAsync(apiBaseUrl, session, settings) {
+  const response = await fetch(`${apiBaseUrl}/user-settings`, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${session.token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(settings),
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || 'Ayarlar kaydedilemedi.');
+  }
+
+  return data.settings || {};
+}
+
 export default function App() {
   const apiBaseUrl = useMemo(getApiBaseUrl, []);
   const [screen, setScreen] = useState('login');
@@ -156,6 +195,7 @@ export default function App() {
   const [testOrder, setTestOrder] = useState(() => createQuestionOrder());
   const [testIndex, setTestIndex] = useState(0);
   const [faceScanEnabled, setFaceScanEnabled] = useState(true);
+  const [courseStartPage, setCourseStartPage] = useState(null);
 
   const firstThreeUnlocked = questions
     .slice(0, 3)
@@ -181,6 +221,11 @@ export default function App() {
     setFaceScanEnabled((current) => {
       const nextValue = !current;
       AsyncStorage.setItem(FACE_SCAN_STORAGE_KEY, String(nextValue)).catch(() => null);
+
+      if (session?.token) {
+        saveUserSettingsAsync(apiBaseUrl, session, { faceScanEnabled: nextValue }).catch(() => null);
+      }
+
       return nextValue;
     });
   }
@@ -202,6 +247,17 @@ export default function App() {
         // Bildirim izni kapaliysa mesajlasma akisini bozma.
       }
     });
+    fetchUserSettingsAsync(apiBaseUrl, session)
+      .then((settings) => {
+        if (active && typeof settings.faceScanEnabled === 'boolean') {
+          setFaceScanEnabled(settings.faceScanEnabled);
+          AsyncStorage.setItem(
+            FACE_SCAN_STORAGE_KEY,
+            String(settings.faceScanEnabled),
+          ).catch(() => null);
+        }
+      })
+      .catch(() => null);
 
     return () => {
       active = false;
@@ -260,6 +316,11 @@ export default function App() {
     setScreen('test');
   }
 
+  function openPdfScreen({ randomPage = false } = {}) {
+    setCourseStartPage(randomPage ? getRandomPage(COURSE_MIN_PAGE, COURSE_MAX_PAGE) : null);
+    setScreen('pdf');
+  }
+
   function leaveCurrentScreen() {
     if (screen === 'test') {
       resetTest();
@@ -271,10 +332,10 @@ export default function App() {
   const chatNavigation = useMemo(
     () => ({
       canGoBack: () => screen === 'chat',
-      goBack: () => setScreen(getBackScreen()),
+      goBack: () => openPdfScreen({ randomPage: true }),
       replace: (routeName) => {
         if (routeName === 'Home' || routeName === 'home') {
-          setScreen(getBackScreen());
+          openPdfScreen({ randomPage: true });
           return;
         }
 
@@ -326,14 +387,14 @@ export default function App() {
       {screen === 'home' ? (
         <GamifiedHomeScreen
           faceScanEnabled={faceScanEnabled}
-          onOpenPdf={() => setScreen('pdf')}
+          onOpenPdf={() => openPdfScreen()}
           onOpenSettings={() => setScreen('settings')}
           onOpenStory={() => setScreen('story')}
           onOpenTest={openTestScreen}
         />
       ) : null}
 
-      {screen === 'pdf' ? <PdfScreen /> : null}
+      {screen === 'pdf' ? <PdfScreen initialPage={courseStartPage} /> : null}
 
       {screen === 'settings' ? (
         <SettingsScreen
@@ -363,7 +424,7 @@ export default function App() {
           faceScanEnabled={faceScanEnabled}
           navigation={chatNavigation}
           session={session}
-          onMotionDetected={() => setScreen('test')}
+          onMotionDetected={() => openPdfScreen({ randomPage: true })}
         />
       ) : null}
 
@@ -521,7 +582,6 @@ function LoginScreen({ apiBaseUrl, onLogin }) {
           label={loading ? 'Giris yapiliyor' : adminMode ? 'Admin Paneline Gir' : 'Calismaya Basla'}
           onPress={login}
         />
-        <Text style={styles.serverHint}>{apiBaseUrl}</Text>
       </View>
     </KeyboardAvoidingView>
   );
@@ -561,8 +621,9 @@ function AdminHomeScreen({ onOpenChat, onOpenLocations }) {
   );
 }
 
-function PdfScreen() {
+function PdfScreen({ initialPage }) {
   const [courseUri, setCourseUri] = useState(null);
+  const courseSourceUri = courseUri && initialPage ? `${courseUri}#page=${initialPage}` : courseUri;
 
   useEffect(() => {
     let active = true;
@@ -599,8 +660,9 @@ function PdfScreen() {
       </View>
       {courseUri ? (
         <WebView
+          key={courseSourceUri}
           originWhitelist={['*']}
-          source={{ uri: courseUri }}
+          source={{ uri: courseSourceUri }}
           startInLoadingState
           renderLoading={() => (
             <View style={styles.webLoading}>
