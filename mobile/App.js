@@ -31,9 +31,11 @@ import {
 } from 'react-native';
 
 const COURSE_PDF = require('./assets/spanish-full-course.pdf');
+const STORY_INTRO_PDF = require('./assets/story-intro.pdf');
 const STORY_PDF = require('./assets/spanish-short-stories.pdf');
 const COURSE_MIN_PAGE = 1;
 const COURSE_MAX_PAGE = 350;
+const STORY_INTRO_MAX_PAGE = 14;
 const STORY_MIN_PAGE = 300;
 const STORY_MAX_PAGE = 1500;
 const FACE_DETECTION_FPS = 2;
@@ -42,6 +44,7 @@ const MOTION_UPDATE_INTERVAL_MS = 80;
 const MOTION_DELTA_THRESHOLD = 0.75;
 const MOTION_MAGNITUDE_THRESHOLD = 1.85;
 const FACE_SCAN_STORAGE_KEY = 'settings.faceScanEnabled';
+const DARK_MODE_STORAGE_KEY = 'settings.darkModeEnabled';
 const LEAGUE_PLAYERS = [
   { name: 'SofiaSol', xp: 1280, rank: 1, highlight: true },
   { name: 'LunaMora', xp: 1195, rank: 2 },
@@ -195,7 +198,9 @@ export default function App() {
   const [testOrder, setTestOrder] = useState(() => createQuestionOrder());
   const [testIndex, setTestIndex] = useState(0);
   const [faceScanEnabled, setFaceScanEnabled] = useState(true);
+  const [darkModeEnabled, setDarkModeEnabled] = useState(false);
   const [courseStartPage, setCourseStartPage] = useState(null);
+  const [storyStartTarget, setStoryStartTarget] = useState(null);
 
   const firstThreeUnlocked = questions
     .slice(0, 3)
@@ -208,6 +213,13 @@ export default function App() {
       .then((storedValue) => {
         if (active && storedValue !== null) {
           setFaceScanEnabled(storedValue === 'true');
+        }
+      })
+      .catch(() => null);
+    AsyncStorage.getItem(DARK_MODE_STORAGE_KEY)
+      .then((storedValue) => {
+        if (active && storedValue !== null) {
+          setDarkModeEnabled(storedValue === 'true');
         }
       })
       .catch(() => null);
@@ -226,6 +238,14 @@ export default function App() {
         saveUserSettingsAsync(apiBaseUrl, session, { faceScanEnabled: nextValue }).catch(() => null);
       }
 
+      return nextValue;
+    });
+  }
+
+  function toggleDarkModeEnabled() {
+    setDarkModeEnabled((current) => {
+      const nextValue = !current;
+      AsyncStorage.setItem(DARK_MODE_STORAGE_KEY, String(nextValue)).catch(() => null);
       return nextValue;
     });
   }
@@ -321,6 +341,24 @@ export default function App() {
     setScreen('pdf');
   }
 
+  function openStoryScreen({ randomPage = false } = {}) {
+    setStoryStartTarget(
+      randomPage
+        ? { book: 'intro', page: STORY_INTRO_MAX_PAGE }
+        : { book: 'intro', page: 1 },
+    );
+    setScreen('story');
+  }
+
+  function openRandomReadingScreen() {
+    if (Math.random() < 0.5) {
+      openPdfScreen({ randomPage: true });
+      return;
+    }
+
+    openStoryScreen({ randomPage: true });
+  }
+
   function leaveCurrentScreen() {
     if (screen === 'test') {
       resetTest();
@@ -332,10 +370,10 @@ export default function App() {
   const chatNavigation = useMemo(
     () => ({
       canGoBack: () => screen === 'chat',
-      goBack: () => openPdfScreen({ randomPage: true }),
+      goBack: openRandomReadingScreen,
       replace: (routeName) => {
         if (routeName === 'Home' || routeName === 'home') {
-          openPdfScreen({ randomPage: true });
+          openRandomReadingScreen();
           return;
         }
 
@@ -351,7 +389,7 @@ export default function App() {
   );
 
   return (
-    <SafeAreaView style={styles.shell}>
+    <SafeAreaView style={[styles.shell, darkModeEnabled && styles.shellDark]}>
       <StatusBar style="light" />
       {session?.user.role === 'user' ? (
         <>
@@ -361,6 +399,7 @@ export default function App() {
       ) : null}
       {screen !== 'login' ? (
         <Header
+          darkModeEnabled={darkModeEnabled}
           title={session?.user.role === 'admin' ? 'Admin Paneli' : 'Calisma'}
           onBack={screen === 'home' || screen === 'adminHome' ? null : leaveCurrentScreen}
           onLogout={handleLogout}
@@ -378,6 +417,7 @@ export default function App() {
       {screen === 'adminHome' ? (
         <GamifiedAdminHomeScreen
           apiBaseUrl={apiBaseUrl}
+          darkModeEnabled={darkModeEnabled}
           session={session}
           onOpenChat={() => setScreen('chat')}
           onOpenLocations={() => setScreen('locations')}
@@ -386,27 +426,33 @@ export default function App() {
 
       {screen === 'home' ? (
         <GamifiedHomeScreen
+          darkModeEnabled={darkModeEnabled}
           faceScanEnabled={faceScanEnabled}
           onOpenPdf={() => openPdfScreen()}
           onOpenSettings={() => setScreen('settings')}
-          onOpenStory={() => setScreen('story')}
+          onOpenStory={() => openStoryScreen()}
           onOpenTest={openTestScreen}
         />
       ) : null}
 
-      {screen === 'pdf' ? <PdfScreen initialPage={courseStartPage} /> : null}
+      {screen === 'pdf' ? <PdfScreen darkModeEnabled={darkModeEnabled} initialPage={courseStartPage} /> : null}
 
       {screen === 'settings' ? (
         <SettingsScreen
+          darkModeEnabled={darkModeEnabled}
           faceScanEnabled={faceScanEnabled}
+          onToggleDarkMode={toggleDarkModeEnabled}
           onToggleFaceScan={toggleFaceScanEnabled}
         />
       ) : null}
 
-      {screen === 'story' ? <StoryScreen /> : null}
+      {screen === 'story' ? (
+        <StoryScreen darkModeEnabled={darkModeEnabled} initialTarget={storyStartTarget} />
+      ) : null}
 
       {screen === 'test' ? (
         <GamifiedTestScreen
+          darkModeEnabled={darkModeEnabled}
           currentAnswer={testOrder[testIndex] ? answers[testOrder[testIndex].id] : null}
           currentQuestion={testOrder[testIndex] || null}
           isChatUnlocked={firstThreeUnlocked}
@@ -421,10 +467,11 @@ export default function App() {
       {screen === 'chat' && session ? (
         <ChatScreen
           apiBaseUrl={apiBaseUrl}
+          darkModeEnabled={darkModeEnabled}
           faceScanEnabled={faceScanEnabled}
           navigation={chatNavigation}
           session={session}
-          onMotionDetected={() => openPdfScreen({ randomPage: true })}
+          onMotionDetected={openRandomReadingScreen}
         />
       ) : null}
 
@@ -435,9 +482,9 @@ export default function App() {
   );
 }
 
-function Header({ title, onBack, onLogout, onSettings }) {
+function Header({ darkModeEnabled, title, onBack, onLogout, onSettings }) {
   return (
-    <View style={styles.header}>
+    <View style={[styles.header, darkModeEnabled && styles.headerDark]}>
       <Pressable
         style={[styles.iconButton, !onBack && styles.hiddenButton]}
         onPress={onBack}
@@ -621,7 +668,7 @@ function AdminHomeScreen({ onOpenChat, onOpenLocations }) {
   );
 }
 
-function PdfScreen({ initialPage }) {
+function PdfScreen({ darkModeEnabled, initialPage }) {
   const [courseUri, setCourseUri] = useState(null);
   const courseSourceUri = courseUri && initialPage ? `${courseUri}#page=${initialPage}` : courseUri;
 
@@ -649,9 +696,9 @@ function PdfScreen({ initialPage }) {
   }, []);
 
   return (
-    <View style={styles.pdfScreen}>
-      <View style={styles.pdfToolbar}>
-        <Text style={styles.pdfTitle}>Ders PDF</Text>
+    <View style={[styles.pdfScreen, darkModeEnabled && styles.darkScreen]}>
+      <View style={[styles.pdfToolbar, darkModeEnabled && styles.darkToolbar]}>
+        <Text style={[styles.pdfTitle, darkModeEnabled && styles.darkTitle]}>Ders PDF</Text>
         {courseUri ? (
           <Pressable style={styles.smallButton} onPress={() => Linking.openURL(courseUri)}>
             <Text style={styles.smallButtonText}>Disarda Ac</Text>
@@ -679,11 +726,13 @@ function PdfScreen({ initialPage }) {
   );
 }
 
-function StoryScreen() {
-  const [storyUri, setStoryUri] = useState(null);
+function StoryScreen({ darkModeEnabled, initialTarget }) {
+  const [introStoryUri, setIntroStoryUri] = useState(null);
+  const [mainStoryUri, setMainStoryUri] = useState(null);
+  const [storyBook, setStoryBook] = useState(initialTarget?.book || 'intro');
   const [query, setQuery] = useState('');
   const [storyPage, setStoryPage] = useState(
-    () => Math.floor(Math.random() * (STORY_MAX_PAGE - STORY_MIN_PAGE + 1)) + STORY_MIN_PAGE,
+    () => initialTarget?.page || 1,
   );
   const [pageInput, setPageInput] = useState('');
   const [showPageInput, setShowPageInput] = useState(false);
@@ -704,10 +753,25 @@ function StoryScreen() {
       )
       .slice(0, 5);
   }, [exactMatch, normalizedQuery]);
-  const storySourceUri = storyUri ? `${storyUri}#page=${storyPage}` : null;
+  const activeStoryUri = storyBook === 'intro' ? introStoryUri : mainStoryUri;
+  const storySourceUri = activeStoryUri ? `${activeStoryUri}#page=${storyPage}` : null;
 
   function changeStoryPage(amount) {
-    setStoryPage((current) => Math.max(1, current + amount));
+    setStoryPage((current) => {
+      const nextPage = current + amount;
+
+      if (storyBook === 'intro' && nextPage > STORY_INTRO_MAX_PAGE) {
+        setStoryBook('main');
+        return STORY_MIN_PAGE;
+      }
+
+      if (storyBook === 'main' && nextPage < STORY_MIN_PAGE) {
+        setStoryBook('intro');
+        return STORY_INTRO_MAX_PAGE;
+      }
+
+      return Math.max(1, nextPage);
+    });
   }
 
   function openTypedPage() {
@@ -723,21 +787,29 @@ function StoryScreen() {
     setShowPageInput(false);
   }
 
+  function openNextStoryBook() {
+    setStoryBook('main');
+    setStoryPage(STORY_MIN_PAGE);
+  }
+
   useEffect(() => {
     let active = true;
 
-    async function loadStory() {
-      const asset = Asset.fromModule(STORY_PDF);
-      await asset.downloadAsync();
+    async function loadStoryAssets() {
+      const introAsset = Asset.fromModule(STORY_INTRO_PDF);
+      const mainAsset = Asset.fromModule(STORY_PDF);
+      await Promise.all([introAsset.downloadAsync(), mainAsset.downloadAsync()]);
 
       if (active) {
-        setStoryUri(asset.localUri || asset.uri);
+        setIntroStoryUri(introAsset.localUri || introAsset.uri);
+        setMainStoryUri(mainAsset.localUri || mainAsset.uri);
       }
     }
 
-    loadStory().catch(() => {
+    loadStoryAssets().catch(() => {
       if (active) {
-        setStoryUri(null);
+        setIntroStoryUri(null);
+        setMainStoryUri(null);
       }
     });
 
@@ -747,9 +819,9 @@ function StoryScreen() {
   }, []);
 
   return (
-    <View style={styles.storyScreen}>
+    <View style={[styles.storyScreen, darkModeEnabled && styles.darkScreen]}>
       <View style={styles.storyHeader}>
-        <View style={styles.storyTranslator}>
+        <View style={[styles.storyTranslator, darkModeEnabled && styles.darkPanel]}>
           <TextInput
             autoCapitalize="none"
             autoCorrect={false}
@@ -789,8 +861,9 @@ function StoryScreen() {
       </View>
 
       <View style={styles.storyBook}>
-        {storyUri ? (
+        {activeStoryUri ? (
           <WebView
+            key={storySourceUri}
             originWhitelist={['*']}
             source={{ uri: storySourceUri }}
             startInLoadingState
@@ -845,6 +918,11 @@ function StoryScreen() {
             <Pressable style={styles.pageJumpButton} onPress={() => setShowPageInput(true)}>
               <Text style={styles.pageJumpButtonText}>Sayfa Yaz</Text>
             </Pressable>
+            {storyBook === 'intro' ? (
+              <Pressable style={styles.pageJumpButton} onPress={openNextStoryBook}>
+                <Text style={styles.pageJumpButtonText}>Devam PDF</Text>
+              </Pressable>
+            ) : null}
           </>
         )}
       </View>
@@ -1164,10 +1242,10 @@ function GamifiedHomeScreen({
   );
 }
 
-function SettingsScreen({ faceScanEnabled, onToggleFaceScan }) {
+function SettingsScreen({ darkModeEnabled, faceScanEnabled, onToggleDarkMode, onToggleFaceScan }) {
   return (
-    <ScrollView contentContainerStyle={styles.content}>
-      <View style={styles.heroBand}>
+    <ScrollView contentContainerStyle={[styles.content, darkModeEnabled && styles.contentDark]}>
+      <View style={[styles.heroBand, darkModeEnabled && styles.darkPanel]}>
         <View style={styles.heroCopy}>
           <Text style={styles.courseBadge}>AYARLAR</Text>
           <Text style={styles.pageTitle}>Chat Ayarlari</Text>
@@ -1200,7 +1278,12 @@ function SettingsScreen({ faceScanEnabled, onToggleFaceScan }) {
       <SettingPreview title="Bildirimler" text="Mesaj ve ders hatirlaticilari acik" enabled />
       <SettingPreview title="Ses efektleri" text="Buton ve gorev sesleri" enabled />
       <SettingPreview title="Gunluk hedef" text="10 dakika calisma hedefi" enabled />
-      <SettingPreview title="Karanlik mod" text="Yakinda kullanilabilir" />
+      <SettingPreview
+        title="Karanlik mod"
+        text="Arayuzu koyu tema ile kullan"
+        enabled={darkModeEnabled}
+        onPress={onToggleDarkMode}
+      />
       <SettingPreview title="Lig siralamasi" text="Haftalik XP yarisi" enabled />
       <SettingPreview title="Veri tasarrufu" text="Gorsel efektleri azalt" />
     </ScrollView>
@@ -1965,9 +2048,11 @@ function LessonNode({ align = 'left', decorative, locked, onPress, reward, step,
   );
 }
 
-function SettingPreview({ enabled, text, title }) {
+function SettingPreview({ enabled, onPress, text, title }) {
+  const Container = onPress ? Pressable : View;
+
   return (
-    <View style={styles.settingRow}>
+    <Container style={styles.settingRow} onPress={onPress}>
       <View style={styles.settingCopy}>
         <Text style={styles.tileTitle}>{title}</Text>
         <Text style={styles.tileText}>{text}</Text>
@@ -1975,7 +2060,7 @@ function SettingPreview({ enabled, text, title }) {
       <View style={[styles.switchTrack, enabled && styles.switchTrackOn, styles.previewSwitch]}>
         <View style={[styles.switchThumb, enabled && styles.switchThumbOn]} />
       </View>
-    </View>
+    </Container>
   );
 }
 
@@ -1996,6 +2081,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f6fff1',
   },
+  shellDark: {
+    backgroundColor: '#101820',
+  },
   header: {
     alignItems: 'center',
     backgroundColor: '#ffffff',
@@ -2005,6 +2093,10 @@ const styles = StyleSheet.create({
     gap: 12,
     minHeight: 62,
     paddingHorizontal: 16,
+  },
+  headerDark: {
+    backgroundColor: '#17212b',
+    borderBottomColor: '#263746',
   },
   iconButton: {
     alignItems: 'center',
@@ -2249,6 +2341,24 @@ const styles = StyleSheet.create({
     gap: 16,
     padding: 20,
     paddingBottom: 34,
+  },
+  contentDark: {
+    backgroundColor: '#101820',
+  },
+  darkScreen: {
+    backgroundColor: '#101820',
+  },
+  darkPanel: {
+    backgroundColor: '#17212b',
+    borderBottomColor: '#263746',
+    borderColor: '#263746',
+  },
+  darkToolbar: {
+    backgroundColor: '#17212b',
+    borderBottomColor: '#263746',
+  },
+  darkTitle: {
+    color: '#f5f7fb',
   },
   pageTitle: {
     color: '#3c3c3c',
